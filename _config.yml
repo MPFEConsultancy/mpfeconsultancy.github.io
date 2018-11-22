@@ -1,6 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes"
-logo: logo.png
 title: MPFE
-description: Consultancy
+description: Consultancy Ltd
 header:
   image: banner.jpg
