@@ -1,4 +1,4 @@
-remote_theme: minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
 logo: logo.png
 title: MPFE
 description: Consultancy
