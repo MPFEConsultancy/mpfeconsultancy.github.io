@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## MPFE Consultancy Ltd
 
-You can use the [editor on GitHub](https://github.com/MPFEConsultancy/mpfeconsultancy.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+MPFE Consultancy is a Hampshire based IT Consultancy business specialising in DevOps, Infrastructure and the Cloud with a particular focus on Microsoft technologies.
 
 ### Markdown
 
