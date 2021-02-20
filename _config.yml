@@ -24,7 +24,7 @@ keywords: [DevOps, Microsoft, Cloud, Azure, AWS, PowerShell, Infrastructure, Win
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: /assets/img/mpfe.png
+logo: /assets/img/logo-cropped.jpg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
