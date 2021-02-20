@@ -1,3 +1,10 @@
-remote_theme: hydecorp/hydejack@v9.1.2
 title: MPFE Consultancy Ltd
+remote_theme: hydecorp/hydejack@v9.1.2
 accent_image: /assets/img/mpfe-bg.jpg
+menu:
+  - title: Blog
+    url:   /blog/
+  - title: Projects
+    url:   /projects/
+  - title: About
+    url:   /about/
