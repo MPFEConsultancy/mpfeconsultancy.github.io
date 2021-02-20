@@ -11,4 +11,4 @@ MPFE have experience providing and maintaining solutions hosted on AWS and Azure
 
 ## Infrastructure
 
-MPFE have 20 years experience working with Microsoft server technologies and associated virtual and physical hardware stacks. We are able to understand, maintain or implement infrastructure solutions particularly where leveraged to deliver Software as a Service (SaaaS) solutions.
+MPFE have 20 years experience working with Microsoft server technologies and associated virtual and physical hardware stacks. We are able to understand, maintain or implement infrastructure solutions particularly where leveraged to deliver Software as a Service (SaaS).
