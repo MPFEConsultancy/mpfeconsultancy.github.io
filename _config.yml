@@ -1,4 +1,4 @@
-theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
 title: MPFE Consultancy Ltd
 accent_image: /assets/img/mpfe-bg-windows.jpg
 menu:
