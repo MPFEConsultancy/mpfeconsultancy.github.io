@@ -4,10 +4,10 @@ accent_image: /assets/img/mpfe-bg-windows.jpg
 menu:
   - title: Home
     url:   /
-  - title: Projects
-    url:   /projects/
   - title: About
     url:   /about/
+  - title: Projects
+    url:   /projects/
   - title: Blog
     url:   /blog/
 
@@ -30,9 +30,3 @@ logo: /assets/img/logo-cropped.jpg
 author:
   name: Mark Wragg
   email: mark@mpfe.uk
-
-# This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2021. All rights reserved.
-
-# Format of the permalinks
-permalink: /:categories/:year-:month-:day-:title/
