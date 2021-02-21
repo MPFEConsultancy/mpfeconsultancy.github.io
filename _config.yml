@@ -12,8 +12,14 @@ menu:
     url:   /about/
   - title: Projects
     url:   /projects/
-  - title: Blog
-    url:   /blog/
+    
+collections:
+  featured_categories:
+    permalink:         /:name/
+    output:            true
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
 
 lang: en
 description:  >
