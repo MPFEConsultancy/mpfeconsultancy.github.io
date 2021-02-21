@@ -3,14 +3,13 @@ MPFE have completed the following client engagements:
 ## Elysian IT
 ### November 2018 ~ March 2019
 
-MPFE were engaged by Elysian IT in Basingstoke to provide Windows Automation services for a project they had engaged for a major client. 
-By utilizing PowerShell, Pester and Jenkins MPFE developed an automated solution to deliver hardened Windows Server images in the clients
+MPFE were engaged by Elysian IT in Basingstoke to provide Windows Automation services for a project they had with a major client in the Financial Technology industry. By utilizing PowerShell, Pester and Jenkins MPFE developed an automated solution to deliver security hardened Windows Server images in the clients
 AWS environment which were then consumed for deployment of their product.
 
 ## Omnico Group 
 ### March 2019
 
-MPFE provided DevOps Engineer services to Omnico for a period of two weeks in March 2019.
+MPFE provided DevOps Engineer services to Omnico for a period of two weeks in March 2019 and provided support for their applications deployed in Azure.
 
 ## Elysian IT
 ### April 2019 ~ June 2019
