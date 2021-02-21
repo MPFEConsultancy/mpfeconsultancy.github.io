@@ -13,7 +13,7 @@ menu:
   - title: Projects
     url:   /projects/
   - title: Blog
-    url:   /blog/
+    url:   /_posts/
 
 lang: en
 description:  >
