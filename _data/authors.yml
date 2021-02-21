@@ -8,7 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Mark Wragg is a Director at MPFE Consultancy Ltd.
+    Mark Wragg is the Director of MPFE Consultancy Ltd.
     
   # This photo will be used in the about section
   picture:
