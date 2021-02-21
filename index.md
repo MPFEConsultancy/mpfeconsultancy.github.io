@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Home
+title: 
 cover: true
 ---
 
