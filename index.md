@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Home
-cover: false
+cover: true
 ---
 
 MPFE is an IT Consultancy business in the UK specialising in DevOps, Infrastructure and the Cloud with a particular focus on Microsoft technologies.
