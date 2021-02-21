@@ -52,3 +52,5 @@ permalink:             /:categories/:year-:month-:day-:title/
 paginate:              10
 paginate_path:         /:num/
 
+favicon: /assets/icons/favicon.ico
+apple_touch_icon: /assets/icons/favicon.ico
