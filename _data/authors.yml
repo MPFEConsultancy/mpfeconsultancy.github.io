@@ -23,8 +23,7 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     twitter:         markwragg
-    github:          markwragg
-    email:           mark@mpfe.uk
+    email:           enquiries@mpfe.uk
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -49,11 +48,11 @@ author1:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    stackoverflow:   markwragg
+    stackoverflow:   2796058/mark-wragg
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # LinkedIn:        mpfe
+    LinkedIn:        mpfe
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
