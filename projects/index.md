@@ -1,4 +1,4 @@
-MPFE have completed the following projects:
+MPFE have completed the following client engagements:
 
 ## Elysian IT
 ### November 2018 ~ March 2019
