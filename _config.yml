@@ -40,9 +40,8 @@ logo: /assets/img/logo-cropped.jpg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name: Mark Wragg
-  email: mark@mpfe.uk
-  LinkedIn: mpfe
+  name: MPFE
+  email: enquiries@mpfe.uk
 
 copyright:             © 2021. All rights reserved.
 
