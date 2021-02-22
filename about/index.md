@@ -1,5 +1,5 @@
 
-MPFE Consultancy Ltd  provide DevOps, Cloud and Infrastructure services with a particular focus on businesses that are leveraging a Microsoft technology stack such as applications deployed on Windows Server, Containers and .NET.
+MPFE Consultancy Ltd  provide DevOps, Cloud and Infrastructure services with a particular focus on businesses that are leveraging a Microsoft technology stack such as applications deployed on Windows Server, Containers or .NET.
 
 ## DevOps
 
