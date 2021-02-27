@@ -3,7 +3,7 @@ layout: post
 title: Providing Windows Automation services for Elysian IT
 image: /assets/img/DSC-Push.png
 description: >
-  In November 2018 MPFE Consultancy were engaged by Elysian IT to provide Windows Automation services in support of a fixed term project they had with a major Financial Technology client. This post described that engagement and the services we were able to provide in order to successfully deliver the clients requirements on time.
+  In November 2018 MPFE Consultancy were engaged by Elysian IT to provide Windows Automation services in support of a fixed term project they had with a major Financial Technology client. This post describes that engagement and the technology we implemented to successfully deliver the requirement on time.
 sitemap: false
 hide_last_modified: true
 author: mark
