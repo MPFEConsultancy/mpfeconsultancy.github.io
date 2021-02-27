@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Providing Windows Automation services for Elysian IT
-image: /assets/img/mpfe-bg-windows.jpg
+image: /assets/img/DSC-Push.png
 description: >
   In November 2018 MPFE Consultancy were engaged by Elysian IT to provide Windows Automation services in support of a fixed term project they had with a major Financial Technology client. This post described that engagement and the services we were able to provide in order to successfully deliver the clients requirements on time.
 sitemap: false
@@ -31,4 +31,4 @@ While it shouldn't be strictly necessary to test the outcome of a DSC script bec
 
 > Packer is a product by Hashicorp for automating the creation of machine images. You create a Packer script which defines the source image you want to customize followed by a series of tasks for how to customize it. You then identify how you want the customized image to be published.
 
-Packer was already being leveraged by the client for this project and was a good choice because it can be very easily leveraged to customize images from a number of sources, including AWS. Packer was used in this project as a wrapper around the other automation that was developed to pull the base Windows 2016 Server image from AWS, customise it via DSC and validate it with Pester before publishing the completed image into the customers private image store. Packer was also used to generalise Windows so that when the image is used to create VMs (Virtual Machines) they are unique.
+Packer was already being leveraged by the client for this project and was a good choice because it can be very easily used to customize images from a number of sources, including AWS. Packer was implemented as part of this project as a wrapper around the other automation that was developed to pull the base Windows 2016 Server image from AWS, customise it via DSC and validate it with Pester before publishing the completed image into the customers private image store. Packer was also used to generalise Windows so that when the image is used to create VMs (Virtual Machines) they are unique.
