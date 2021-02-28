@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Providing Windows Automation services for Elysian IT
+title: Working with Elysian IT to implement a security hardened Windows Server 2016 VM Image in AWS
 image: /assets/img/DSC-Push.png
 description: >
   In November 2018 MPFE Consultancy were engaged by Elysian IT to provide Windows Automation services in support of a fixed term project they had with a major Financial Technology client. This post describes that engagement and the technology we implemented to successfully deliver the requirement on time.

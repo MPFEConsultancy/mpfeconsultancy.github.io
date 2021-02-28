@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Elysian IT engagement extended to integrate security hardened Windows image for FT client and assist with Azure migration
+title: Elysian IT extension to integrate security hardened Windows image into Jenkins pipeline and assist with Azure migration
 image: /assets/img/Jenkins-CD.png
 description: >
-  In March 2019 MPFE Consultancy were engaged by Elysian IT to further support the project with their Financial Technology client and to contribute to a separate Azure migration project.
+  In March 2019 MPFE Consultancy were engaged by Elysian IT to further support the project with their Financial Technology client and to contribute to a separate Azure migration project. During this engagement we worked with Jenkins, Gradle, AWS and Azure.
 sitemap: false
 hide_last_modified: true
 author: mark
@@ -19,9 +19,14 @@ In addition MPFE provided assistance with a separate Azure migration project. We
 
 ### Jenkins
 
+> Jenkins is a widely used automation server product used to build, test, and deploy software.
 ### Gradle
+
+> Gradle is an open source build and automation tool that runs on JVM (Java Virtual Machine).
 
 ### AWS
 
+> AWS (Amazon Web Services) is Amazon's cloud service, with a global presence and over 200 services that can be leveraged to create simple and complex infrastructure that is automated, scalable, and cost effective. 
 ### Azure
 
+> Azure is Microsoft's cloud service. Similar to AWS it also has over 200 services and can be leveraged to build a variety of infrastructure that can be scaled to meet demand. Azure also offers tight integration with other Microsoft technologies such as Active Directory, SQL Server and Windows Server.
