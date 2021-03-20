@@ -3,7 +3,7 @@ layout: post
 title: Elysian IT extension to integrate security hardened Windows image into Jenkins pipeline and assist with Azure migration
 image: /assets/img/Jenkins-CD.png
 description: >
-  In March 2019 MPFE Consultancy were engaged by Elysian IT to further support the project with their Financial Technology client and to contribute to a separate Azure migration project. During this engagement we worked with Jenkins, Gradle, AWS and Azure.
+  In March 2019 MPFE Consultancy were engaged by Elysian IT to further support the project with their Financial Technology client and to contribute to a separate Azure migration project. During this engagement we worked with Jenkins, Gradle and AWS CloudFormation templates as well as Azure Blueprints and ARM templates for the migration project.
 sitemap: false
 hide_last_modified: true
 author: mark
@@ -29,14 +29,18 @@ In addition MPFE provided assistance with a separate Azure migration project. We
 
 
 
-### AWS
+### AWS CloudFormation Templates
 
-> AWS (Amazon Web Services) is Amazon's cloud service, with a global presence and over 200 services that can be leveraged to create simple and complex infrastructure that is automated, scalable, and cost effective. 
-
-
-
-### Azure
-
-> Azure is Microsoft's cloud service. Similar to AWS it also has over 200 services and can be leveraged to build a variety of infrastructure that can be scaled to meet demand. Azure also offers tight integration with other Microsoft technologies such as Active Directory, SQL Server and Windows Server.
+> CloudFormation allows infrastructure as code deployments to AWS. A CloudFormation template can be written as either JSON or YAML and describes the AWS resources you want to deploy. AWS then takes care of provisioning and configuring the resources, ensuring that the resultant state matches the definition of the template.
 
 
+
+### ARM (Azure Resource Manager) Templates
+
+> ARM templates are the infrastructure as code technology for Azure. An ARM template is written in JSON and describes the Azure resources you want to deploy. When a template is executed Azure ensures that the resultant state matches what is defined in the template.
+
+
+
+### Azure Blueprint
+
+> Azure Blueprint allows an engineer or architect to define a repeatable set of resources that adhere to an organisations standards, patterns and requirements. It allows Azure Roles Assignments, Policy Assignments, ARM Templates and Resource Groups to be defined via code.
