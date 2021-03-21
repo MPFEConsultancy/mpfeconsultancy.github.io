@@ -1,18 +1,23 @@
 MPFE have completed the following client engagements:
 
 ## Elysian IT
-### November 2018 ~ March 2019
 
-MPFE were engaged by Elysian IT in Basingstoke to provide Windows Automation services for a project they had with a major client in the Financial Technology industry. By utilizing PowerShell, Pester and Jenkins MPFE developed an automated solution to deliver security hardened Windows Server images in the clients
-AWS environment which were then consumed for deployment of their product.
+> November 2018 ~ March 2019
+
+MPFE were engaged by Elysian IT in Basingstoke to provide Windows Automation services for a project they had with a major client in 
+the Financial Technology industry. By utilizing PowerShell, Pester and Jenkins MPFE developed an automated solution to deliver security 
+hardened Windows Server images in the clients AWS environment which were then consumed for deployment of their product.
 
 ## Omnico Group 
-### March 2019
 
-MPFE provided DevOps Engineer services to Omnico for a period of two weeks in March 2019 and provided support for their applications deployed in Azure.
+> March 2019
+
+MPFE provided DevOps Engineer services to Omnico for a period of two weeks in March 2019. We developed a Terraform script to deploy a 
+new AKS (Azure Kubernetes Service) cluster and provided general support for their applications deployed in Azure.
 
 ## Elysian IT
-### April 2019 ~ June 2019
+
+> April 2019 ~ June 2019
 
 MPFE were extended for a further engagement with Elysian IT to work on two projects: a continuation of the first project in order to
 further integrate the hardened Windows Server images into the product deployment pipelines, utilizing Gradle and Jenkins in AWS and a 
@@ -20,11 +25,14 @@ second project to automate the deployment of infrastructure in Azure for a clien
 and PowerShell.
 
 ## SolidSoft Reply
-### July 2019 ~ Present
+
+> July 2019 ~ Present
 
 MPFE were engaged to provide DevOps, deployment and automation services to SolidSoft Reply in support of their major clients
-product development. MPFE supported the successful deployments of the following releases of the European Medicines Verification System (EMVS):
+product development. MPFE supported the successful deployments of the following releases of the European Medicines Verification 
+System (EMVS):
 
 - EMVS Hub SR1.6
 - EMVS Hub SR1.7
 - EMVS Hub SR1.8
+- EMVS Hub SR1.9 (in progress)
