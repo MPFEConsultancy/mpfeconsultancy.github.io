@@ -10,9 +10,9 @@ MPFE were engaged by Elysian IT in Basingstoke to provide Windows Automation ser
 the Financial Technology industry. By utilizing PowerShell, Pester and Jenkins MPFE developed an automated solution to deliver security 
 hardened Windows Server images in the clients AWS environment which were then consumed for deployment of their product.
 
-**April 2019 ~ June 2019**
+**April ~ June 2019**
 
-MPFE were extended for a further engagement with Elysian IT to work on two projects: a continuation of the first project in order to
+In April MPFE were extended for a further engagement with Elysian IT to work on two projects: a continuation of the first project in order to
 further integrate the hardened Windows Server images into the product deployment pipelines, utilizing Gradle and Jenkins in AWS and a 
 second project to automate the deployment of infrastructure in Azure for a client utilizing ARM (Azure Resource Manager) templates
 and PowerShell.
@@ -31,7 +31,7 @@ new AKS (Azure Kubernetes Service) cluster and provided general support for thei
 > Solidsoft Reply specialises in developing tailored digital applications & clinical integrations for the healthcare and pharmaceutical 
 > industries using Microsoft’s Azure suite. 
 
-**July 2019 ~ Present**
+**August 2019 ~ Present**
 
 MPFE were engaged to provide DevOps, deployment and automation services to SolidSoft Reply in support of their major clients
 product development. MPFE supported the successful deployments of the following releases of the European Medicines Verification 
