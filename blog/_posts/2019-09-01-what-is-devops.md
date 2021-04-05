@@ -44,6 +44,7 @@ In order to deliver changes with speed and safety, DevOps has a heavy focus on a
 ## Lean
 
 Lean originates from the car manufacturing industry and is about eliminating waste, focussing on quality and delivering quickly. Lean is about considering your process and identifying opportunities for improvement, be that by automating a task that is long or error prone or by shortening the time between tasks (such as by improving collaboration between teams). Lean is about driving continuous improvement: creating a feedback loop so that each cycle of the process drives improvements into the next.
+
 ## Measurement
 
 Measurement is a pillar of DevOps because without it you cannot evaluate if you are improving or succeeding. There are lots of tools to assist with measurement and ensuring you have the right measures identified and tracked is essential. Give consideration to KPIs such as:
@@ -53,6 +54,7 @@ Measurement is a pillar of DevOps because without it you cannot evaluate if you 
 - How long does it take to recover from failure? (MTTR - Mean Time to Repair)
 - What is the usage level/trends of the product or service?
 - How responsive is the product/service? (performance)
+
 ## Sharing
 
 As stated in culture, DevOps is about sharing success and failure and in doing so teams need to share responsibilities. In order to build a culture of collaboration Developers should work with operations to share the responsibility of troubleshooting production problems, or responding to issues out of hours (on call). That isn't to say that Developers should be hired with the expectation that they have the skillset of operations, it simply avoids the "throwing it over the wall" culture that existed pre-DevOps.
