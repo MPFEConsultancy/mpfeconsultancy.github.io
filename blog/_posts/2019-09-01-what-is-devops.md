@@ -33,9 +33,9 @@ Jez Humble, co-author of the DevOps Handbook coined the term CALMS for assessing
 
 DevOps is foremost about culture. Being successful with DevOps is likely to require an organisation to rethink and restructure and will require some buy in from many parts of the business across all levels. Beware relabelling a single team or function, while keeping everything else the same. DevOps is about having shared goals and these goals need to be understood across the different functions. Sometimes this might need to apply both in IT and outside of it. Ultimately your DevOps culture needs to focus on:
 
-- Reducing friction between teams
-- Sharing success and failure
-- Having consistent goals and measures
+- Reducing friction between teams.
+- Sharing success and failure.
+- Having consistent goals and measures.
 
 ## Automation
 
