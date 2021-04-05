@@ -3,7 +3,7 @@ layout: post
 title: What is DevOps?
 image: /assets/img/DevOps.jpg
 description: >
-  DevOps is a way of working that brings the teams of Software Development and Operations together in order to improve the speed and safety of Software Delivery.
+  DevOps is about bringing Software Development and Operations together in order to improve the speed and safety of Software Delivery. This blog post gives a high level introduction to the concept of DevOps.
 sitemap: false
 hide_last_modified: true
 author: mark
