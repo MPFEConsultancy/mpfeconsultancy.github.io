@@ -57,5 +57,5 @@ Measurement is a pillar of DevOps because without it you cannot evaluate if you 
 
 ## Sharing
 
-As stated in culture, DevOps is about sharing success and failure and in doing so teams need to share responsibilities. In order to build a culture of collaboration Developers should work with operations to share the responsibility of troubleshooting production problems, or responding to issues out of hours (on call). That isn't to say that Developers should be hired with the expectation that they have the skillset of operations, it simply avoids the "throwing it over the wall" culture that existed pre-DevOps.
+As stated in culture, DevOps is about sharing success and failure and in doing so teams need to share responsibilities. In order to build a culture of collaboration Developers should work with operations to share the responsibility of troubleshooting production problems, or responding to issues out of hours (on call). That isn't to say that Developers should be hired with the expectation that they have the skillset of operations, it simply avoids the "throwing it over the wall" culture that may have existed pre-DevOps.
 
