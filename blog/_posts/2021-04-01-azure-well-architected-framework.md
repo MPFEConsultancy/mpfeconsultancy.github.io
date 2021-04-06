@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Azure Well Architected Framework
-image: /assets/img/azure-well-architected.png.jpg
+image: /assets/img/azure-well-architected.png
 description: >
   The Azure Well Architected framework is a set of guiding principals that can be used to plan or assess your use of Azure to improve the quality of your infrastructure. 
 sitemap: false
