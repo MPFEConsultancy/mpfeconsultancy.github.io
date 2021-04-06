@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Elysian IT extension to integrate security hardened Windows image into Jenkins pipeline and assist with Azure migration
+title: Further work with Elysian IT to integrate a secure VM image into Jenkins deployment pipelines in AWS and co-author ARM templates to deploy new Azure resources for a customer migration
 image: /assets/img/Jenkins-CD.png
 description: >
   In March 2019 MPFE Consultancy were engaged by Elysian IT to further support the project with their Financial Technology client and to contribute to a separate Azure migration project. During this engagement we worked with Jenkins, Gradle and AWS CloudFormation templates as well as Azure Blueprints and ARM templates for the migration project.
