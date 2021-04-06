@@ -9,7 +9,7 @@ hide_last_modified: true
 author: mark
 ---
 
-In 2020 Microsoft introduced the Azure Well-Architected Framework. Freely available online via the Microsoft Documentation site, the framework is a best practice guide for planning or improving your Azure infrastructure. The framework is organised into five pillars of architectural excellence:
+In 2020 Microsoft introduced the [Azure Well-Architected Framework](https://docs.microsoft.com/en-us/azure/architecture/framework/). Freely available online via the Microsoft Documentation site, the framework is a best practice guide for planning or improving your Azure infrastructure. The framework is organised into five pillars of architectural excellence:
 
 - Cost Optimization
 - Operational Excellence
@@ -21,7 +21,7 @@ In 2020 Microsoft introduced the Azure Well-Architected Framework. Freely availa
 
 One of the primary advantages of leveraging the cloud is the ability to take a "pay as you go" approach to your infrastructure. Traditional IT generally required a lot of up front capital expenditure, as well as pre provisioning for the highest peak in demand. With the clouds ability to scale on demand and with infrastructure automation tools infrastructure can be provisioned more flexibly to meet demand. However, without a focus on cost when implementing cloud architecture there is a risk costs getting out of control.
 
-> "You can use Cosmos DB to burn money, but you can also use it as a database." -- https://mijailovic.net/2020/07/25/cosmosdb-throughput/
+> "You can use Cosmos DB to burn money, but you can also use it as a database." -- [https://mijailovic.net/2020/07/25/cosmosdb-throughput/](https://mijailovic.net/2020/07/25/cosmosdb-throughput/)
 
 
 
