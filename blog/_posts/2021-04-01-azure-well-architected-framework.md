@@ -19,11 +19,9 @@ In 2020 Microsoft introduced the [Azure Well-Architected Framework](https://docs
 
 ## Cost Optimisation
 
-One of the primary advantages of leveraging the cloud is the ability to take a "pay as you go" approach to your infrastructure. Traditional IT generally required a lot of up front capital expenditure, as well as pre provisioning for the highest peak in demand. With the clouds ability to scale on demand and with infrastructure automation tools infrastructure can be provisioned more flexibly to meet demand. However, without a focus on cost when implementing cloud architecture there is a risk costs getting out of control.
-
 > "You can use Cosmos DB to burn money, but you can also use it as a database." -- [https://mijailovic.net/2020/07/25/cosmosdb-throughput/](https://mijailovic.net/2020/07/25/cosmosdb-throughput/)
 
-
+One of the primary advantages of leveraging the cloud is the ability to take a "pay as you go" approach to your infrastructure. Traditional IT generally required a lot of up front capital expenditure, as well as pre provisioning for the highest peak in demand. With the clouds ability to scale on demand and with infrastructure automation tools infrastructure can be provisioned more flexibly to meet demand. However, without a focus on cost when implementing cloud architecture there is a risk costs getting out of control.
 
 ## Operational Excellence
 
