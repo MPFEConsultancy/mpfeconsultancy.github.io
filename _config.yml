@@ -54,3 +54,5 @@ paginate_path:         /:num/
 
 favicon: /assets/icons/favicon.ico
 apple_touch_icon: /assets/icons/favicon.ico
+
+future: false
