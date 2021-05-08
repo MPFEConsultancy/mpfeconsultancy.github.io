@@ -28,7 +28,8 @@ ARM templates can be intimidating to get started with because JSON is quite a co
 
 Here is a simple ARM template example:
 
-```JSON
+~~~JSON
+//file: "azuredeploy.json"
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
@@ -71,7 +72,7 @@ Here is a simple ARM template example:
     }
   ]
 }
-```
+~~~
 
 One of the main issues with ARM templates historically has been that you couldn't easily preview what changes a deployment was going to make before executing it. Azure have recently added a `-WhatIf` function to ARM deployments that does give you a detailed output of what the deployment would change. However this feature is still in preview and isn't always 100% accurate.
 
