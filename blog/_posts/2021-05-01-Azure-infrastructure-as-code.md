@@ -83,7 +83,7 @@ One of the main issues with ARM templates historically has been that you couldn'
 Here is a simple Terraform example:
 
 ~~~terraform
-// file: main.tf
+// file: "main.tf"
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
   location = "West Europe"
