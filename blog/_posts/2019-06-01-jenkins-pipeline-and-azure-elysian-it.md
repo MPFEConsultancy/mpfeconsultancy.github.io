@@ -4,7 +4,6 @@ title: Working with Elysian IT to integrate a secure VM image into Jenkins deplo
 image: /assets/img/Jenkins-CD.png
 description: >
   In March 2019 MPFE Consultancy were engaged by Elysian IT to further support the project with their Financial Technology client and to contribute to a separate Azure migration project. During this engagement we worked with Jenkins, Gradle and AWS CloudFormation templates as well as Azure Blueprints and ARM templates for the migration project.
-sitemap: false
 hide_last_modified: true
 author: mark
 ---
