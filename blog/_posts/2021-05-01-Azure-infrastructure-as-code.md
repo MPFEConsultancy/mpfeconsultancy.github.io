@@ -102,11 +102,11 @@ resource "azurerm_storage_account" "example" {
 }
 ~~~
 
-The Terraform language is much less verbose than the JSON of ARM templates and so can be easier to get started with, is more readable and easier to maintain. Terraform also allows you to preview your changes prior to executing them. It does this by maintaining a state while which is updated when your template is executed with the current state of resources. Maintaining this state file can become a challenge when a team needs to work on the same resources. When collaborating its best practice to store the state remotely, such as in an Azure Blob Storage account. Because Terraform is a third party tool it can also lag behind when new Azure resources are released.
+The Terraform language is much more succinct than the JSON format of ARM templates and so can be easier to get started with, is more readable and easier to maintain. Terraform also allows you to preview your changes prior to executing them. It does this by maintaining a state file which is updated when your template is executed with the current configuration of resources. Maintaining this state file can become a challenge when a team needs to work on the same resources. When collaborating its best practice to store the state remotely, such as in an Azure Blob Storage account. Because Terraform is a third party tool it can also lag behind when new Azure resources are released.
 
 ## Bicep
 
-[Bicep](https://github.com/Azure/bicep) is a DSL (Domain Specific Language) for deploying Azure resources. The intention of Bicep is to drastically simplify the template authoring experience by providing a cleaner syntax than you get with native ARM templates. Bicep is a transparent abstraction over ARM, so anything you can do in ARM templates should be possible in Bicep. Bicep templates transpiled into standard ARM template JSON files, so ultimately the deployment approach is the same.
+[Bicep](https://github.com/Azure/bicep) is a DSL (Domain Specific Language) for deploying Azure resources. The intention of Bicep is to drastically simplify the template authoring experience by providing a cleaner syntax than you get with native ARM templates. Bicep is a transparent abstraction over ARM, so anything you can do in ARM templates should be possible in Bicep. Bicep templates are transpiled into standard ARM template JSON files, so ultimately the deployment approach is the same.
 
 Here is a simple Bicep example:
 
