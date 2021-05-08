@@ -28,8 +28,8 @@ ARM templates can be intimidating to get started with because JSON is quite a co
 
 Here is a simple ARM template example:
 
-~~~JSON
-//file: "azuredeploy.json"
+~~~Json-doc
+// file: "azuredeploy.json"
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
@@ -82,7 +82,7 @@ One of the main issues with ARM templates historically has been that you couldn'
 
 Here is a simple Terraform example:
 
-```terraform
+~~~terraform
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
   location = "West Europe"
@@ -99,7 +99,7 @@ resource "azurerm_storage_account" "example" {
     environment = "staging"
   }
 }
-```
+~~~
 
 The Terraform language is much less verbose than the JSON of ARM templates and so can be easier to get started with, is more readable and easier to maintain. Terraform also allows you to preview your changes prior to executing them. It does this by maintaining a state while which is updated when your template is executed with the current state of resources. Maintaining this state file can become a challenge when a team needs to work on the same resources. When collaborating its best practice to store the state remotely, such as in an Azure Blob Storage account. Because Terraform is a third party tool it can also lag behind when new Azure resources are released.
 
@@ -109,7 +109,7 @@ The Terraform language is much less verbose than the JSON of ARM templates and s
 
 Here is a simple Bicep example:
 
-```bicep
+~~~terraform
 param location string = 'eastus'
 
 @minLength(3)
@@ -128,7 +128,7 @@ resource stg 'Microsoft.Storage/storageAccounts@2019-06-01' = {
 }
 
 output storageId string = stg.id // output resourceId of storage account
-```
+~~~
 
 Bicep is in preview and the current release has some known limitations. It may therefore not be suitable for production deployments yet, but Microsoft do seem serious about its development as Bicep examples are already being included throughout the Azure documentation. 
 
