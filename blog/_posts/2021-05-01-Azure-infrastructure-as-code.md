@@ -28,7 +28,7 @@ ARM templates can be intimidating to get started with because JSON is quite a co
 
 Here is a simple ARM template example:
 
-~~~Json-doc
+~~~js
 // file: "azuredeploy.json"
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -83,6 +83,7 @@ One of the main issues with ARM templates historically has been that you couldn'
 Here is a simple Terraform example:
 
 ~~~terraform
+// file: main.tf
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
   location = "West Europe"
