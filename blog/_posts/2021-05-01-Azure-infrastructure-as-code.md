@@ -111,6 +111,7 @@ The Terraform language is much less verbose than the JSON of ARM templates and s
 Here is a simple Bicep example:
 
 ~~~terraform
+// file: "main.bicep"
 param location string = 'eastus'
 
 @minLength(3)
@@ -144,6 +145,7 @@ Bicep is in preview and the current release has some known limitations. It may t
 Here is a simple PSArm example:
 
 ```powershell
+// file: "storage.psarm.ps1"
 param(
   [Parameter(Mandatory)]
   [string]
