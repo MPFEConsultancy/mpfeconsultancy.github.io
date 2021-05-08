@@ -144,8 +144,7 @@ Bicep is in preview and the current release has some known limitations. It may t
 
 Here is a simple PSArm example:
 
-```powershell
-
+~~~powershell
 # file: "storage.psarm.ps1"
 param(
   [Parameter(Mandatory)]
@@ -190,6 +189,6 @@ Arm {
   Output 'deploymentTime' -Type string -Value $deploymentTime
   Output 'timePlus3' -Type string -Value $timePlus3
 }
-```
+~~~
 
 PSArm has only been publicly available since March 2021, and its label as "experiemental" probably means you should invest in it with caution. Like Bicep its probably best not to use it for production deployments yet, but its definitely one to watch (and try!) as it continues to improve and develop.
