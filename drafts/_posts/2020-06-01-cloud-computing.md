@@ -11,14 +11,14 @@ Cloud Computing is the practice of using a network of remote servers (or service
 
 The three major cloud computing providers are Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP). 
 
-##  
+## AWS
 
-What is AWS
+What is AWS?
 
 ## Azure
 
-What is Azure
+What is Azure?
 
 ## Google Cloud
 
-What is Google Cloud
+What is Google Cloud?
