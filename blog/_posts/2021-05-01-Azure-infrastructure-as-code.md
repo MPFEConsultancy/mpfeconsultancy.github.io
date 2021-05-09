@@ -10,13 +10,13 @@ author: mark
 
 Cloud computing has a low barrier of entry. It is generally very easy to deploy resources through a web based portal and this can be a quick way to experiment and get started. However cloud infrastructure can also become complex very quickly and so managing your resources via automation is a must. Infrastructure as Code (IaC) is the concept of declaring your infrastructure as one or more configuration templates and then having your cloud provider execute those templates via its API in order to deploy and configure your resources to align with your declaration. Used well, infrastructure templates ensure consistency, repeatability and enable version control.
 
-In Azure there are several different tools you can choose for implmenting Infrastructure as Code. We detail four of these below, two of which are well established and two are new / in Beta.
+In Azure there are several different tools you can choose for implementing Infrastructure as Code. We detail four of these below, two of which are well established and two are new / in Beta.
 
 ## ARM Templates
 
 The native approach to Infrastructure as Code in Azure is to use [ARM (Azure Resource Manager) templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview). ARM templates are authored in JSON (JavaScript Object Notation), which is a common data format for storing objects. ARM templates have a schema which includes the following sections:
 
-- Parameters - Used to provide environment specific values at deployment time. By using paramemters you can have one template generate multiple environments (e.g: test, staging, prod)
+- Parameters - Used to provide environment specific values at deployment time. By using parameters you can have one template generate multiple environments (e.g: test, staging, prod)
 - Variables - Define values that you reuse in your template, so that you are controlling their value in a single location.
 - User-defined functions - Create functions to simplify operations in your template (e.g to create or transform a specific input value).
 - Resources - Define the Azure resources that the template should deploy and their configuration settings.
@@ -136,9 +136,9 @@ Bicep is in preview and the current release has some known limitations. It may t
 
 ## PSArm
 
-[PSArm](https://github.com/PowerShell/PSArm) is an experimental PowerShell module that (like Bicep) also provide a DSL for deploying ARM templates. Where PSArm differs to Bicep is that its embedded within PowerShell, so it allows you to delcare Azure resources within what to many will already be a familiar scripting framework. Some of the benefits of working in this way are:
+[PSArm](https://github.com/PowerShell/PSArm) is an experimental PowerShell module that (like Bicep) also provide a DSL for deploying ARM templates. Where PSArm differs to Bicep is that its embedded within PowerShell, so it allows you to declare Azure resources within what to many will already be a familiar scripting framework. Some of the benefits of working in this way are:
 
-- Ability to integrate wth PowerShell's existing command completion functionality to make discoverability of the PSArm lanaguage concepts easier.
+- Ability to integrate wth PowerShell's existing command completion functionality to make discoverability of the PSArm language concepts easier.
 - Reuse existing PowerShell concepts such as piping, `foreach` and `foreach-object` to create concise, dynamic templates.
 - Use PowerShell's whitespace-aware syntax to create clean templates but with the ability to add comments.
 
@@ -191,4 +191,4 @@ Arm {
 }
 ~~~
 
-PSArm has only been publicly available since March 2021, and its label as "experiemental" probably means you should invest in it with caution. Like Bicep its probably best not to use it for production deployments yet, but its definitely one to watch (and try!) as it continues to improve and develop.
+PSArm has only been publicly available since March 2021, and its label as "experimental" probably means you should invest in it with caution. Like Bicep its probably best not to use it for production deployments yet, but its definitely one to watch (and try!) as it continues to improve and develop.
