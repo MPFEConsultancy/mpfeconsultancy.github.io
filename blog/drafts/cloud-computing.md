@@ -12,12 +12,12 @@ What is Cloud Computing?
 
 ## AWS
 
-..
+What is AWS
 
 ## Azure
 
-..
+What is Azure
 
 ## Google Cloud
 
-..
+What is Google Cloud
