@@ -31,4 +31,4 @@ By making good design decisions, you can build applications in the cloud that ar
 
 ## MPFE
 
-We hope you've found this brief introduction to Cloud Computing useful. MPFE have experience developing infrastructure solutions and automation in both AWS and Azure. If you are considering a cloud migration or deployment, or if have resources in the cloud that you need assistance managing or improving we would love to help. Please get in touch.
+We hope you've found this brief introduction to Cloud Computing useful. MPFE have experience developing infrastructure solutions and automation in both AWS and Azure. If you are considering a cloud migration or deployment, or if you have resources in the cloud that you need assistance managing or improving we would love to help. Please get in touch.
