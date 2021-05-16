@@ -27,7 +27,7 @@ One of the greatest benefits of using the cloud is the ability to experiment mor
 
 ### Build applications with high availability and resiliency
 
-By making good design decisions, you can build applications in the cloud that have are highly available and fault tolerant. When building an application for the cloud you can use design patterns such as including circuit breakers to ensure part of the system isn't overwhelmed when a failure occurs, implement queuing to level load to different parts of the system, add caching to reduce latency and serve customers more quickly and centralise configuration to ease management and control. Cloud providers can provide services to enable these design patterns easily while removing the traditional overhead of installing, managing or having to scale the underlying platforms of the services you need. 
+By making good design decisions, you can build applications in the cloud that are highly available and fault tolerant. When building an application for the cloud you can use various design patterns such as (for example) circuit breakers to ensure part of the system isn't overwhelmed when a failure occurs, queues to level load between different parts of the system, caching to reduce latency and serve customers more quickly and centralised configuration to ease management and control. Cloud providers have dedicated services to enable easy implementation of these kind of design patterns while removing the traditional overhead of installing, managing or having to scale the underlying platforms of the services you need. 
 
 ## MPFE
 
