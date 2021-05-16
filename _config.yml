@@ -3,7 +3,7 @@ remote_theme: hydecorp/hydejack@v9
 title: MPFE Consultancy Ltd
 
 accent_image: /assets/img/mpfe-bg-windows.jpg
-accent_color:          rgb(64,64,64)
+accent_color: rgb(64,64,64)
 
 menu:
   - title: Home
@@ -54,5 +54,3 @@ paginate_path:         /:num/
 
 favicon: /assets/icons/favicon.ico
 apple_touch_icon: /assets/icons/favicon.ico
-
-future: false
