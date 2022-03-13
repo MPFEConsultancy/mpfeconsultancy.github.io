@@ -26,3 +26,35 @@ At a high level, this encourages you to consider:
 - How will you recover your service should malicious activity or disruption occur?
 - How will you limit, monitor, and control access to your Azure resources and manage access to your applications?
 
+# Monitoring
+
+Azure provides a number of services to monitor and respond to security threats:
+
+## Microsoft Sentinel
+
+[Microsoft Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview) is a security information and event management (SIEM) and security orchestration, automation and response (SOAR) solution. Sentinel collects data across all your uses, applications and infrastructure and can be leveraged both for on-premise resources and in multiple clouds. Using Microsoft's analytics and threat intelligence it can alert you to previously undetected threats and minimizes false positives. It utilizes Artificial Intelligence to hunt for suspicious activity, leveraging years of Microsoft's cyber security experience and expertise. Finally through built-in orchestration and automation of common tasks it enables you to respond to incidents rapidly, via your own custom [playbooks](https://docs.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook).
+
+![Microsoft Sentinel Dashboard](/assets/img/azure-sentinel-dashboard.png)
+
+[Microsoft Sentinel pricing](https://azure.microsoft.com/en-gb/pricing/details/microsoft-sentinel/) is based on the amount of GBs of logs ingested. At time of writing, the cost in UK South is £1.89 per GB on the pay as you go tier. If you have a high level of daily logging, commitment tiers can be purchased to reduce the per GB cost. There is also a reduced cost for the ingestion of basic log types (which are often verbose but have a low amount of security data). Microsoft Sentinel can be tried free for 31 days.
+
+## Microsoft Defender for Cloud
+
+..
+
+## Application Insights
+
+..
+
+## Azure Monitor / Azure Monitor logs
+
+..
+
+## Azure Advisor
+
+..
+
+# Deployment
+
+..
+
