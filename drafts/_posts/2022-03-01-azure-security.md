@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Security
+title: Azure Security Tools and Capabilities
 image: /assets/img/azure-security-center.png
 description: >
   Cloud security is a shared responsibility between the cloud provider and you: the customer. It is important to consider security throughout the lifecycle of your cloud deployments. This article explores some of the security tools and capabilities that are available within the Microsoft Azure platform.
