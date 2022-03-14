@@ -11,7 +11,11 @@ Cloud Computing is the practice of using a network of remote servers (or service
 
 ## The major cloud providers
 
-The three major cloud providers are Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP). There are a lot of similarities between the three, and each provide core offerings of scalable compute, storage and network infrastructure. Their main differentiators are in their service offerings and appeal. AWS has the biggest market share and is generally considered the most forward thinking with the largest breadth of services. Azure often appeals to Enterprises, particularly where they are already leveraging Microsoft's software products. GCP can appeal to developers, particularly those who are developing cloud-native applications and may want to leverage Google's advanced technologies in things like AI.
+The three major cloud providers are Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure. 
+
+![AWS Azure GCP](/assets/img/aws-azure-gcp.jpg)
+
+There are a lot of similarities between the three, and each provide core offerings of scalable compute, storage and network infrastructure. Their main differentiators are in their service offerings and appeal. AWS has the biggest market share and is generally considered the most forward thinking with the largest breadth of services. Azure often appeals to Enterprises, particularly where they are already leveraging Microsoft's software products. GCP can appeal to developers, particularly those who are developing cloud-native applications and may want to leverage Google's advanced technologies in things like AI.
 
 ## Advantages
 
