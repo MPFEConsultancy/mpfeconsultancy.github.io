@@ -28,7 +28,7 @@ At a high level, this encourages you to consider:
 
 # Monitoring
 
-Azure provides a number of services to monitor and respond to security threats:
+Azure provides a number of services that enable you to monitor and respond to security threats:
 
 ## Microsoft Sentinel
 
@@ -40,7 +40,24 @@ Azure provides a number of services to monitor and respond to security threats:
 
 ## Microsoft Defender for Cloud
 
-..
+Previously known as Security Centre and Azure Defender, [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) uses a secure score to simplify your understanding of the security posture of your resources and to provide simple actionable recommendations to harden your environment. 
+
+![Azure Defender for Cloud Dashboard](/assets/img/azure-defender-for-cloud-dashboard.png)
+
+Microsoft Defender for Cloud is free, but it can also be augmented with additional plans for the following resource and technology types:
+
+- Servers
+- Storage
+- SQL
+- Containers
+- App Service
+- Key Vault
+- Resource Manager
+- DNS
+- Open-source relational databases
+- Cosmos DB
+
+These plans enable additional security features such as endpoint protection, vulnerability scanning and the detection of suspicious or unusual activity.
 
 ## Application Insights
 
