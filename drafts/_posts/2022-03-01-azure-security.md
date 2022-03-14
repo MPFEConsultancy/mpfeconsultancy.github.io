@@ -93,7 +93,7 @@ Azure Monitor can be used to collect data from a variety of sources, including:
 
 ![Azure Monitor Dashboard](/assets/img/azure-advisor.jpg)
 
-Where possible Azure Advisor recommendations take you directly to actionable fixes and where that isn't possible provide you with the requisite documentation.
+Where possible Azure Advisor recommendations take you directly to actionable fixes or (where that isn't possible) provide you with the requisite documentation.
 
 # Deployment
 
@@ -105,8 +105,12 @@ For more information on the different tools you can use to automate deployments 
 
 # Access Control
 
-..
+[Role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
+
+![Access Control](/assets/img/access-control.png)
 
 # Disaster Recovery
 
-..
+[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview) and [Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview)
+
+![Disaster Recovery](/assets/img/disaster-recovery.jpg)
