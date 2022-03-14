@@ -89,11 +89,19 @@ Azure Monitor can be used to collect data from a variety of sources, including:
 
 ## Azure Advisor
 
-..
+[Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview) provides personalised recommendations to improve the cost effectiveness, performance, reliability and security of your resources. Azure Advisor integrates with Microsoft Defender for Cloud to bring you security recommendations, but its still an important tool to review to improve the overall quality of your deployments, and to manage those improvements in priority order.
+
+![Azure Monitor Dashboard](/assets/img/azure-advisor.jpg)
+
+Where possible Azure Advisor recommendations take you directly to actionable fixes and where that isn't possible provide you with the requisite documentation.
 
 # Deployment
 
-..
+Azure has a low barrier of entry and creating resources via the Portal can be quick and easy, but over time this is an ineffective and risky way to manage your resources. Azure provides [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) as a service to automate the deployment of your resources. Often you want to produce multiple near identical environments in order to test an application or product through different stages before delivering changes into production. Using deployment automation ensures these environments are consistent. In addition by limiting access to deploy resources through other means, your deployment pipelines act as gates that can be used (with automated testing) to deliver safe and secure resources.
+
+![Azure ARM templates](/assets/img/azure-arm-templates.png)
+
+For more information on the different tools you can use to automate deployments in Azure, have a look at our [Azure infrastructure as code](/blog/2021-05-01-Azure-infrastructure-as-code/) article.
 
 # Access Control
 
