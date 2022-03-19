@@ -107,11 +107,11 @@ For more information on the different tools you can use to automate deployments 
 
 # Access Control
 
-When planning access to your Azure resources you need to consider the needs of your customers and those administering your resources. Generally customer access is managed via network controls, or via authentication if required. Administrator access in Azure is managed in Azure via role based access control.
+When planning access to your Azure resources you need to consider the needs of your users and those administering your resources. User access can be managed via network controls and . Administrator access in Azure is managed in Azure via role based access control.
 
-## Role based access control
+## Role Based Access Control
 
-By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement specific permissions for your users so they have access just to the resources they require and are able to perform only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
+By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement specific permissions for your Azure administrators so they have access just to the resources they require and are able to perform only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
 
 ![Access Control](/assets/img/access-control.png)
 
@@ -124,9 +124,12 @@ Permissions in Azure can be set at the following levels:
 
 Permissions are assigned via roles. You can use either the built-in roles (which provide pre-determined sets of permissions for various typical responsibilities) or you can create your own custom roles. Roles are additive, which means that if a user is a member of more than one role, they effectively have the combined permissions for both. Roles can now also feature [deny assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments), where a specific permission is blocked for a user. Deny assignments always take precedence over those allowed. 
 
-## Network Access
+## Network Access Control
 
-..
+[Network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-overview)
+
+![Azure Network Security Group Rules](/assets/img/nsg-rules.png)
+
 
 # Disaster Recovery
 
