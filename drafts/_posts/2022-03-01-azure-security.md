@@ -26,7 +26,7 @@ At a high level, this encourages you to consider:
 - How will you recover your service should malicious activity or disruption occur?
 - How will you limit, monitor, and control access to your Azure resources and manage access to your applications?
 
-# Monitoring
+# Monitor, Detect and Respond
 
 Azure provides a number of services that enable you to monitor and respond to security threats:
 
@@ -95,7 +95,7 @@ Azure Monitor can be used to collect data from a variety of sources, including:
 
 Where possible Azure Advisor recommendations take you directly to actionable fixes or (where that isn't possible) provide you with the requisite documentation.
 
-# Deployment
+# Managing Deployments
 
 ## Azure Resource Manager
 
