@@ -131,7 +131,9 @@ Permissions are assigned via roles. You can use either the built-in roles (which
 ![Azure Network Security Group Rules](/assets/img/nsg-rules.png)
 
 
-# Disaster Recovery
+# Backup and Disaster Recovery
+
+Your last line of defence against security intrusion and malicious disruption is a working backup and disaster recovery strategy. It is important to consider both of these in isolation: a backup strategy does not necessarily allow you to recover from a disaster, in that it doesn't necessarily protect you from the loss of you primary Azure region, or give you the scripts and procedures necessary to fully recover your services if they are lost. Equally a disaster recovery strategy isn't a form of backup, as it typically involves replicating your data to a secondary location and malicious or accidental corruption or deletion of data would be immediately replicated to the secondary site. However implementing and regularly testing both backup and disaster recovery gives you the protection you need to recover quickly (and with minimal data loss) from an unexpected or malicious outage.
 
 ## Azure Backup
 
