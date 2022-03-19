@@ -107,6 +107,8 @@ For more information on the different tools you can use to automate deployments 
 
 # Access Control
 
+When planning access to your Azure resources you need to consider the needs of your customers and those administering your resources. Generally customer access is managed via network controls, or via authentication if required. Administrator access in Azure is managed in Azure via role based access control.
+
 ## Role based access control
 
 By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement specific permissions for your users so they have access just to the resources they require and are able to perform only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
