@@ -97,6 +97,8 @@ Where possible Azure Advisor recommendations take you directly to actionable fix
 
 # Deployment
 
+## Azure Resource Manager
+
 Azure has a low barrier of entry and creating resources via the Portal can be quick and easy, but over time this is an ineffective and risky way to manage your resources. Azure provides [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) as a service to automate the deployment of your resources. Often you want to produce multiple near identical environments in order to test an application or product through different stages before delivering changes into production. Using deployment automation ensures these environments are consistent. In addition by limiting access to deploy resources through other means, your deployment pipelines act as gates that can be used (with automated testing) to deliver safe and secure resources.
 
 ![Azure ARM templates](/assets/img/azure-arm-templates.png)
@@ -105,12 +107,39 @@ For more information on the different tools you can use to automate deployments 
 
 # Access Control
 
-[Role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
+## Role based access control
+
+By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement specific permissions for your users so they have access just to the resources they require and are able to perform only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
 
 ![Access Control](/assets/img/access-control.png)
 
+Permissions in Azure can be set at the following levels:
+
+- Management Group -- This is the highest organisation level and allows you to group more than one subscription so that permissions can be assigned for them all easily.
+- Subscription -- A collection of resources that fall under the same billing subscription.
+- Resource Group -- A management group that allows you to group related resources for ease of management.
+- Resource -- A specific resource in Azure (i.e a Virtual Machine, database etc.)
+
+Permissions are assigned via roles. You can use either the built-in roles (which provide pre-determined sets of permissions for various typical responsibilities) or you can create your own custom roles. Roles are additive, which means that if a user is a member of more than one role, they effectively have the combined permissions for both. Roles can now also feature [deny assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments), where a specific permission is blocked for a user. Deny assignments always take precedence over those allowed. 
+
+## Network Access
+
+..
+
 # Disaster Recovery
 
-[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview) and [Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview)
+## Azure Backup
+
+[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview)
+
+![Azure Backup](/assets/img/azure-backup.png)
+
+## Disaster Recovery
+
+[Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview)
 
 ![Disaster Recovery](/assets/img/disaster-recovery.jpg)
+
+# Summary
+
+We hope you've found this introduction to security capabilities and tools in Azure useful. Remember that security is an ongoing practice and requires ownership and accountability to be effective. Microsoft provide the tools to surface threats in your infrastructure but its largely your responsibility to act on the information they provide. If you think MPFE can be of any assistance in securing your Azure resources, please do not hestiate to [get in touch with us](mailto:mark@mpfe.uk).
