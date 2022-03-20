@@ -30,7 +30,7 @@ At a high level, this encourages you to consider:
 
 > - _How will you monitor, detect, and respond to threats within your cloud resources?_
 
-Azure provides a number of services that enable you to monitor and respond to security threats. To manage security effectively you need a tool that surfaces security issues and helps you to quickly understand their urgency and mitigation. These tools can also apply intelligence to automatically respond to threats, and these responses can be tailored to your needs. The main security monitoring tools built-in to Azure are as follows:
+Azure provides a number of services that enable you to monitor and respond to security threats. To manage security effectively you need a tool that surfaces security issues and helps you to quickly understand their urgency and mitigation. These tools can also apply intelligence to automatically respond to threats, and these responses can be tailored to your needs. The main security and monitoring tools built-in to Azure are as follows:
 
 ## Microsoft Sentinel
 
