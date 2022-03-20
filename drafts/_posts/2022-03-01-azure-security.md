@@ -126,10 +126,23 @@ Permissions are assigned via roles. You can use either the built-in roles (which
 
 ## Network Access Control
 
-[Network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-overview)
+Many services in Azure are publicly accessible by default, so giving careful thought to [network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-overview) is essential. Network controls in Azure can be applied via one or more of the following technologies:
+
+- [Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works)
+- [Application Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
+- [Azure Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview)
+- [Azure DDoS protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+- [Azure Web Application Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/overview)
+
+Controlling access in, out and within your networks is a basic tenant of IT security. Azure allows you to define Network Security Groups (NSGs) with ordered lists of rules to allow traffic from specific sources, to specific destinations on specific ports and protocols. NSGs can be assigned to subnets or network interface (NICs). By using Application Security Groups (ASGs) you can simplify the management of the rules in your NSGs by grouping services together and then using the ASG as the source or destination for your rules. By using ASGs it may be possible to define all of your rules via a single NSG (applied to all subnets for a specified VNET), which has the advantages of centralising network security management. There's no cost for NSGs and an Azure Subscription can have up to 5000 NSGs with a maximum of 1000 rules in each.
 
 ![Azure Network Security Group Rules](/assets/img/nsg-rules.png)
 
+Where as NSGs allow you to define network access at OSI layers 3 and 4, Azure Firewall allows you to filter traffic based on layers 3 - 7. This kind of filtering is able to inspect the contents of traffic coming in and out of your network to determine if they may be malicious. Threat intelligence-based filtering can alert or automatically deny access from known malicious IPs or domains. Azure Firewall is available as standard and [premium](https://docs.microsoft.com/en-us/azure/firewall/premium-features), with the premium version providing advanced capabilities for rapid detection of attacks by looking for specific patterns, to block things like malware, phishing, coin mining and trojan attacks.
+
+Distributed Denial of Service (DDoS) attacks attempt to force a service offline by overwhelming it with requests, making the service unavailable to legitimate users. Any internet facing service is vulnerable to DDoS attacks. Azure DDoS protection is a feature that can be enabled for a fixed monthly cost (currently £2,218/month in West Europe) to one or more of your VNETs within a specified tenant to protect up to 100 public IPs (with additional IPs being charged as overage). DDoS protection is an always-on service and attack mitigation is a fully automatic process. It also learns your traffic over time to tune itself to the profile that is most suitable for your service.
+
+Azure Web Application Firewall is a feature of Azure Application Gateway (a web traffic load balancer) that provides centralised protection of your services from common exploits and vulnerabilities, such as SQL injection and cross-site scripting. You enable WAF via your own custom policy where you define the rules you want to apply from one of the [OWASP Core rule sets](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules?tabs=owasp32). Azure WAF is an additional cost vs deploying an Application Gateway without the WAF feature enabled. However if you have DDoS protection enabled on the tenant then you pay the standard Application Gateway pricing for WAF. In West Europe Application Gateway with WAF is charged at £77.59 a month, with data processing charged at £0.0061 per connection/month.
 
 # Backup and Disaster Recovery
 
