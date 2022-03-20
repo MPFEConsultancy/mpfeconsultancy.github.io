@@ -115,7 +115,7 @@ For more information on the different tools you can use to automate deployments 
 
 ## Vulnerability Scanning
 
-By deploying Azure's [Vulnerability Assessment agent](https://docs.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-vm) (provided by Qualys) on to your Virtual Machines in both pre-production and production application vulnerabilities can be surfaced and reported to Defender for Cloud for mitigation. The agent can be deployed directly from Defender for Cloud and/or you can enable an Azure policy to ensure its deployed by default on to any new and existing Virtual Machines.
+By deploying Azure's [Vulnerability Assessment agent](https://docs.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-vm) (provided by Qualys) on to your Virtual Machines in both pre-production and production, application vulnerabilities can be surfaced and reported to Defender for Cloud for mitigation. The agent can be deployed directly from Defender for Cloud and/or you can enable an Azure policy to ensure its deployed by default on to any new and existing Virtual Machines.
 
 ## Antimalware
 
@@ -131,7 +131,7 @@ When planning access to your Azure resources you need to consider the needs of y
 
 ## Network Access Control
 
-Many services in Azure are publicly accessible by default, so giving careful thought to [network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-overview) is essential. Network controls in Azure can be applied via one or more of the following technologies:
+Many services in Azure are publicly accessible by default, so giving careful thought to [network security](https://docs.microsoft.com/en-us/azure/security/fundamentals/network-overview) is essential. Network controls and protections in Azure can be applied via the following technologies (as well as via specific network settings on some Azure resources):
 
 - [Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works)
 - [Application Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
