@@ -120,25 +120,9 @@ By deploying Azure's [Vulnerability Assessment agent](https://docs.microsoft.com
 
 > - _How will you limit access between specific devices and subnets and ensure that the minimum required access is enabled?_
 > - _How will you limit, monitor, and control access to your Azure resources and manage access to your applications?_
+> - _How will you control access to your cloud storage?_
 
-When planning access to your Azure resources you need to consider the needs of your users and those administering your resources. User access is enforced through network controls and through whatever authentication (if required) is configured for your applications. Administrative access in Azure is managed via role based access control.
-
-## Role Based Access Control
-
-By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement permissions for your Azure administrators so they have access to specific resources they require and are able to execute only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
-
-![Access Control](/assets/img/access-control.png)
-
-Permissions in Azure can be set at the following levels:
-
-- Management Group -- This is the highest organisation level and allows you to group more than one subscription so that permissions can be assigned for them all easily.
-- Subscription -- A collection of resources that fall under the same billing subscription.
-- Resource Group -- A management group that allows you to group related resources for ease of management.
-- Resource -- A specific resource in Azure (i.e a Virtual Machine, database etc.)
-
-Permissions are assigned via roles. You can use either the built-in roles (which provide pre-determined sets of permissions for various typical responsibilities) or you can create your own custom roles. Roles are additive, which means that if a user is a member of more than one role, they effectively have the combined permissions for both. Roles can now also feature [deny assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments), where a specific permission is blocked for a user. Deny assignments always take precedence over those allowed. 
-
-Users are managed for your tenant via Azure Active Directory (AD) and its important to consider enforcing a [Multi-factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requirement for any users who have significant permissions within your subscriptions.
+When planning access to your Azure resources you need to consider the needs of your users and those administering your resources. User access is enforced through network controls and through whatever authentication (if required) is configured for your applications. Administrative access in Azure is managed via role based access control. Many Azure services are also public by default, such as Azure Storage. You should consider if this is necessary for your service and if not implement controls to limit access.
 
 ## Network Access Control
 
@@ -159,6 +143,27 @@ Where as NSGs allow you to define network access at OSI layers 3 and 4, Azure Fi
 Distributed Denial of Service (DDoS) attacks attempt to force a service offline by overwhelming it with requests, making the service unavailable to legitimate users. Any internet facing service is vulnerable to DDoS attacks. Azure DDoS Standard protection is a feature that can be enabled for a fixed monthly cost (currently £2,218/month in West Europe) to one or more of your VNETs within a specified tenant to protect up to 100 public IPs (with additional IPs being charged as overage). DDoS protection is an always-on service and attack mitigation is a fully automatic process. It also learns your traffic over time to tune itself to the profile that is most suitable for your service. There is a [basic level of DDoS protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-faq#are-services-unsafe-in-azure-without-the-service-) enabled by default in Azure, but Microsoft warns that the threshold at which this may trigger will already be at a level higher than most applications have the capacity to handle.
 
 Azure Web Application Firewall is a feature of Azure Application Gateway (a web traffic load balancer) that provides centralised protection of your services from common exploits and vulnerabilities, such as SQL injection and cross-site scripting. You enable WAF via your own custom policy where you define the rules you want to apply from one of the [OWASP Core rule sets](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules?tabs=owasp32). Azure WAF is an additional cost vs deploying an Application Gateway without the WAF feature enabled. However if you have DDoS protection enabled on the tenant then you pay the standard Application Gateway pricing for WAF. In West Europe Application Gateway with WAF is charged at £77.59 a month, with data processing charged at £0.0061 per connection/month.
+
+## Role Based Access Control
+
+By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement permissions for your Azure administrators so they have access to specific resources they require and are able to execute only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
+
+![Access Control](/assets/img/access-control.png)
+
+Permissions in Azure can be set at the following levels:
+
+- Management Group -- This is the highest organisation level and allows you to group more than one subscription so that permissions can be assigned for them all easily.
+- Subscription -- A collection of resources that fall under the same billing subscription.
+- Resource Group -- A management group that allows you to group related resources for ease of management.
+- Resource -- A specific resource in Azure (i.e a Virtual Machine, database etc.)
+
+Permissions are assigned via roles. You can use either the built-in roles (which provide pre-determined sets of permissions for various typical responsibilities) or you can create your own custom roles. Roles are additive, which means that if a user is a member of more than one role, they effectively have the combined permissions for both. Roles can now also feature [deny assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments), where a specific permission is blocked for a user. Deny assignments always take precedence over those allowed. 
+
+Users are managed for your tenant via Azure Active Directory (AD) and its important to consider enforcing a [Multi-factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requirement for any users who have significant permissions within your subscriptions.
+
+## Storage Network Security
+
+Azure storage account are publicly accessible by default, but there are way to configure and customise [network security](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal). If you only need one or more storage accounts to be accessible from other resources within Azure, you can configure private endpoints, which assigns a private IP address from your virtual network to the storage account so that all traffic between your network and the storage account traverse a private link. You can also specify public IP addresses that you want to permit access over the internet by setting storage account specific firewall rules.
 
 # Backup and Disaster Recovery
 
