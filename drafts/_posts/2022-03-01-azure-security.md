@@ -150,11 +150,26 @@ Your last line of defence against security intrusion and malicious disruption is
 
 ## Azure Backup
 
-[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview)
+[Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview) provides a simple built-in solution to backup and restore your data in the cloud, as well as on-premise. Azure backup can be used to backup the following resources:
+
+- [On-premise files](https://docs.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix), folders and system state, usingg the Microsoft Azure Recovery Services (MARS) agent.
+- [Entire Azure VMs](https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction) (Windows and Linux), or specific files, folders or system state.
+- [Azure Managed disks](https://docs.microsoft.com/en-us/azure/backup/backup-managed-disks)
+- [Azure File shares](https://docs.microsoft.com/en-us/azure/backup/backup-afs)
+- [SQL Servers on Azure VMs](https://docs.microsoft.com/en-us/azure/backup/backup-azure-sql-database)
+- [SAP HANA databases on Azure VMs](https://docs.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database)
+- [Azure Database for PostgreSQL servers](https://docs.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql)
+- [Azure Blobs](https://docs.microsoft.com/en-us/azure/backup/blob-backup-overview)
+
+To use Azure Backup you deploy a Recovery Services Vault which is used to define your backup policies and store your backup data. Backups can be replicated to protect them against regional outages by using either the Geo-redundant storage (GRS) (for protection against the loss of an entire Azure Region) or Zone-redundant storage (ZRS) (for protection against the loss of a zone within an Azure region). When you are using GRS you can also enable the Cross Region Restore feature, allowing you to access and restore the secondary region backups at any time, which can be useful for testing or if you want to trigger a restore in the secondary region regardless of the state of the primary region.
 
 ![Azure Backup](/assets/img/azure-backup.png)
 
+Via your Azure Backup policies you define the long your backups are retained. You can specify daily, weekly, monthly and yearly backup points, allowing you to retain backups for a long period of time but at a lower frequency than more recent backups.
+
 ## Disaster Recovery
+
+
 
 [Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview)
 
