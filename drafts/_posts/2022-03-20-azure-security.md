@@ -28,7 +28,9 @@ At a high level, this encourages you to consider:
 
 # Monitor, Detect and Respond
 
-Azure provides a number of services that enable you to monitor and respond to security threats:
+> - How will you monitor, detect, and respond to threats within your cloud resources?
+
+Azure provides a number of services that enable you to monitor and respond to security threats. To manage security effectively you need a tool that surfaces security issues and helps you to quickly understand their urgency and mitigation. These tools can also apply intelligence to automatically respond to threats, and these responses can be tailored to your needs. The main security monitoring tools built-in to Azure are as follows:
 
 ## Microsoft Sentinel
 
@@ -40,7 +42,7 @@ Azure provides a number of services that enable you to monitor and respond to se
 
 ## Microsoft Defender for Cloud
 
-Previously known as Security Centre and Azure Defender, [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) uses a secure score to simplify your understanding of the security posture of your resources and to provide simple actionable recommendations to harden your environment. Defender for Cloud generates security alerts which can be managed within its own dashboard or can be exported to Sentinel or another non-Azure SIEM, SOAR or IT Service Management (ITSM) system.
+Previously known as Security Centre and Azure Defender, [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) is enabled by default and present you with a "secure score" to simplify your understanding of the security state of your resources and to provide simple actionable recommendations to harden your environment. Defender for Cloud generates security alerts which can be managed within its own dashboard or can be exported to Azure Sentinel or another non-Azure SIEM, SOAR or IT Service Management (ITSM) system.
 
 ![Azure Defender for Cloud Dashboard](/assets/img/azure-defender-for-cloud-dashboard.png)
 
@@ -97,15 +99,23 @@ Where possible Azure Advisor recommendations take you directly to actionable fix
 
 # Managing Deployments
 
+> - How will you manage the deployment of resources and control, manage, and monitor changes to your cloud infrastructure and applications?
+> - How will you detect vulnerabilities in your cloud applications?
+
+While threat detection and management is key, prevention is better than a cure. Deploying infrastructure in Azure is likely to be an iterative and ongoing process for you. By utilizing CI/CD pipelines and infrastructure as code to automate your deployments you can ensure infrastructure changes are delivered safely and securely. By applying appropriate controls and monitoring around other changes made within your subscriptions you can remove the risk of uncontrolled or rogue changes introducing security risks.
+
 ## Azure Resource Manager
 
-Azure has a low barrier of entry and creating resources via the Portal can be quick and easy, but over time this is an ineffective and risky way to manage your resources. Azure provides [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) as a service to automate the deployment of your resources. Often you want to produce multiple near identical environments in order to test an application or product through different stages of your development lifecycle before delivering changes into production. Using deployment automation ensures these environments are consistent. In addition by limiting access to deploy resources through other means, your deployment pipelines act as gates that can be used (with automated testing and vulnerability scanning tools) to deliver safe and secure resources.
+Azure has a low barrier of entry and creating resources via the Portal can be quick and easy, but over time this is an ineffective and risky way to manage your resources. Azure provides [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) as a service to automate the deployment of your resources. Often you want to produce multiple near identical environments in order to test an application or product through different stages of your development lifecycle before delivering changes into production. Using deployment automation ensures these environments are consistent. In addition by limiting access to deploy resources through other means, your deployment pipelines can act as gates that can be used (with automated testing and vulnerability scanning tools) to deliver safe and secure changes.
 
 ![Azure ARM templates](/assets/img/azure-arm-templates.png)
 
-For more information on the different tools you can use to automate deployments in Azure, have a look at our [Azure infrastructure as code](/blog/2021-05-01-Azure-infrastructure-as-code/) article.
+For more information on the different tools you can use to automate deployments in Azure, have a look at our earlier [Azure infrastructure as code](/blog/2021-05-01-Azure-infrastructure-as-code/) article.
 
 # Access Control
+
+> - How will you limit access between specific devices and subnets and ensure that the minimum required access is enabled?
+> - How will you limit, monitor, and control access to your Azure resources and manage access to your applications?
 
 When planning access to your Azure resources you need to consider the needs of your users and those administering your resources. User access is enforced through network controls and through whatever authentication (if required) is configured for your applications. Administrative access in Azure is managed via role based access control.
 
@@ -147,6 +157,8 @@ Distributed Denial of Service (DDoS) attacks attempt to force a service offline 
 Azure Web Application Firewall is a feature of Azure Application Gateway (a web traffic load balancer) that provides centralised protection of your services from common exploits and vulnerabilities, such as SQL injection and cross-site scripting. You enable WAF via your own custom policy where you define the rules you want to apply from one of the [OWASP Core rule sets](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules?tabs=owasp32). Azure WAF is an additional cost vs deploying an Application Gateway without the WAF feature enabled. However if you have DDoS protection enabled on the tenant then you pay the standard Application Gateway pricing for WAF. In West Europe Application Gateway with WAF is charged at £77.59 a month, with data processing charged at £0.0061 per connection/month.
 
 # Backup and Disaster Recovery
+
+> - How will you recover your service should malicious activity or disruption occur?
 
 Your last line of defence against security intrusion and malicious disruption is a working backup and disaster recovery strategy. It is important to consider both of these in isolation: a backup strategy does not necessarily allow you to recover from a disaster, in that it doesn't necessarily protect you from the loss of you primary Azure region, or give you the scripts and procedures necessary to fully recover your services if they are lost. Equally a disaster recovery strategy isn't a form of backup, as it typically involves replicating your data to a secondary location and malicious or accidental corruption or deletion of data would be immediately replicated to the secondary site. However implementing and regularly testing both backup and disaster recovery gives you the protection you need to recover quickly (and with minimal data loss) from an unexpected or malicious outage.
 
