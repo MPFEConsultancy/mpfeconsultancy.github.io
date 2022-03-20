@@ -163,7 +163,7 @@ Your last line of defence against security intrusion and malicious disruption is
 - [Azure Database for PostgreSQL servers](https://docs.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql)
 - [Azure Blobs](https://docs.microsoft.com/en-us/azure/backup/blob-backup-overview)
 
-To use Azure Backup you deploy a Recovery Services Vault which is used to define your backup policies and store your backup data. Backups can be replicated to protect them against regional outages by using either the Geo-redundant storage (GRS) (for protection against the loss of an entire Azure Region) or Zone-redundant storage (ZRS) (for protection against the loss of a zone within an Azure region). When you are using GRS you can also enable the Cross Region Restore feature, allowing you to access and restore the secondary region backups at any time, which can be useful for testing or if you want to trigger a restore in the secondary region regardless of the state of the primary region.
+To use Azure Backup you deploy a Recovery Services Vault which is used to define your backup policies and store your backup data. Backups can be replicated to protect them against regional outages by using either Geo-redundant storage (GRS) (for protection against the loss of an entire Azure Region) or Zone-redundant storage (ZRS) (for protection against the loss of a zone within an Azure region). When you are using GRS you can also enable the Cross Region Restore feature, allowing you to access and restore the secondary region backups at any time, which can be useful for testing or if you want to trigger a restore in the secondary region regardless of the state of the primary region.
 
 ![Azure Backup](/assets/img/azure-backup.png)
 
