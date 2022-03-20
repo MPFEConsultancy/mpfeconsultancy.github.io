@@ -6,6 +6,7 @@ description: >
   Cloud security is a shared responsibility between you and your  cloud provider. It is important to consider security throughout the lifecycle of the services you deploy in the cloud. This article explores some of the security tools and capabilities that are available within the Microsoft Azure platform.
 hide_last_modified: true
 author: mark
+published: true
 ---
 
 Microsoft Azure provides a number of tools and capabilities that can be leveraged to create secure cloud solutions, but these must be carefully considered and intentionally implemented. Azure also provides a number of security services and plans that can be leveraged at additional cost to monitor and manage threats and vulnerabilities. New attack vectors are discovered every day and it is not unusual for hackers to breach systems weeks or months before they leverage their unauthorised access for malicious means. Maintaining your security in the cloud needs to be an ongoing and equally evolving process.
