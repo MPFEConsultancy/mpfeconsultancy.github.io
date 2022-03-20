@@ -97,7 +97,7 @@ Azure Monitor can be used to collect data from a variety of sources, including:
 
 Where possible Azure Advisor recommendations take you directly to actionable fixes or (where that isn't possible) provide you with the requisite documentation.
 
-# Managing Deployments
+# Managing Deployments and Detecting Vulnerabilities
 
 > - _How will you manage the deployment of resources and control, manage, and monitor changes to your cloud infrastructure and applications?_
 > - _How will you detect vulnerabilities in your cloud applications?_
@@ -111,6 +111,10 @@ Azure has a low barrier of entry and creating resources via the Portal can be qu
 ![Azure ARM templates](/assets/img/azure-arm-templates.png)
 
 For more information on the different tools you can use to automate deployments in Azure, have a look at our earlier [Azure infrastructure as code](/blog/2021-05-01-Azure-infrastructure-as-code/) article.
+
+## Vulnerability Scanning
+
+By deploying Azure's [Vulnerability Assessment agent](https://docs.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-vm) (provided by Qualys) on to your Virtual Machines in both pre-production and production application vulnerabilities can be surfaced and reported to Defender for Cloud for mitigation. The agent can be deployed directly from Defender for Cloud and/or you can enable an Azure policy to ensure its deployed by default on to any new and existing Virtual Machines.
 
 # Access Control
 
