@@ -3,12 +3,12 @@ layout: post
 title: Azure Security Tools and Capabilities
 image: /assets/img/azure-security-center.png
 description: >
-  Cloud security is a shared responsibility between you and the cloud provider. It is important to consider security throughout the lifecycle of your cloud deployments. This article explores some of the security tools and capabilities that are available within the Microsoft Azure platform.
+  Cloud security is a shared responsibility between you and your  cloud provider. It is important to consider security throughout the lifecycle of the services you deploy in the cloud. This article explores some of the security tools and capabilities that are available within the Microsoft Azure platform.
 hide_last_modified: true
 author: mark
 ---
 
-It is important to consider security throughout the lifecycle of your cloud deployments. The Microsoft Azure platform provides tools and capabilities that can be leveraged to create secure solutions, but these must be carefully considered and deliberately implemented. Azure also provides a number of security services and plans that can be leveraged for additional cost to monitor and manage threats and vulnerabilities. New attack vectors are discovered every day and it is not unusual for hackers to breach systems weeks or months before they leverage their unauthorised access for malicious means. Maintaining your security in the cloud needs to be an ongoing and equally evolving process.
+Microsoft Azure provides a number of tools and capabilities that can be leveraged to create secure cloud solutions, but these must be carefully considered and intentionally implemented. Azure also provides a number of security services and plans that can be leveraged at additional cost to monitor and manage threats and vulnerabilities. New attack vectors are discovered every day and it is not unusual for hackers to breach systems weeks or months before they leverage their unauthorised access for malicious means. Maintaining your security in the cloud needs to be an ongoing and equally evolving process.
 
 # Getting started
 
@@ -32,7 +32,7 @@ Azure provides a number of services that enable you to monitor and respond to se
 
 ## Microsoft Sentinel
 
-[Microsoft Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview) is a security information and event management (SIEM) and security orchestration, automation and response (SOAR) solution. Sentinel collects data across all your uses, applications and infrastructure and can be leveraged both for on-premise resources and in multiple clouds. Using Microsoft's analytics and threat intelligence it can alert you to previously undetected threats and minimizes false positives. It utilizes Artificial Intelligence to hunt for suspicious activity, leveraging years of Microsoft's cyber security experience and expertise. Finally through built-in orchestration and automation of common tasks it enables you to respond to incidents rapidly, via your own custom [playbooks](https://docs.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook).
+[Microsoft Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview) is a security information and event management (SIEM) and security orchestration, automation and response (SOAR) solution. Sentinel collects data across all your users, applications and infrastructure and can be leveraged both for on-premise resources and across multiple clouds. Microsoft's analytics and threat intelligence can alert you to previously undetected threats and works to minimise false positives. It utilises Artificial Intelligence to hunt for suspicious activity, leveraging Microsoft's years of cyber security experience and expertise. Finally through built-in orchestration and automation of common tasks it enables you to respond to incidents rapidly, via [pre-defined](https://docs.microsoft.com/en-us/azure/sentinel/use-playbook-templates) or your own custom designed [playbooks](https://docs.microsoft.com/en-us/azure/sentinel/tutorial-respond-threats-playbook).
 
 ![Microsoft Sentinel Dashboard](/assets/img/azure-sentinel-dashboard.png)
 
@@ -44,7 +44,7 @@ Previously known as Security Centre and Azure Defender, [Microsoft Defender for 
 
 ![Azure Defender for Cloud Dashboard](/assets/img/azure-defender-for-cloud-dashboard.png)
 
-Microsoft Defender for Cloud is free, but it can also be augmented with additional plans for the following resource and technology types:
+Microsoft Defender for Cloud is free, but it can also be augmented (at cost) with additional plans for the following resource and technology types:
 
 - [Servers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
 - [Storage](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction)
@@ -61,7 +61,7 @@ These plans enable additional security features such as endpoint protection, vul
 
 ## Application Insights
 
-[Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) is now a feature of Azure Monitor, and provides application performance management and monitoring for web applications. While Application Insights is foremost a performance monitoring and analysis tool, the logs that it captures can form part of your ability to monitor the security and behaviour of your applications.
+[Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) is now integrated with Azure Monitor by default, and provides application performance management and monitoring for web applications. While Application Insights is foremost a performance monitoring and analysis tool, the logs that it captures can form part of your ability to monitor the security and behaviour of your applications.
 
 ![Application Insights Search](/assets/img/application-insights-search.png)
 
@@ -69,13 +69,13 @@ Application Insights also now features the [Application security detection pack]
 
 1. Insecure URL access: A URL that is accessible via HTTPS is also accessible via HTTP (i.e unencrypted).
 2. Insecure Form: a form or other POST request is using HTTP instead of HTTPS.
-3. Suspicious user activity: the same user is accessing the application for multiple locations at the same time.
+3. Suspicious user activity: the same user is accessing the application from multiple locations at the same time.
 
 The Application security detection pack requires no special setup, other than capturing telemetry from your application as usual.
 
 ## Azure Monitor
 
-[Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) is a powerful tool that can be used to correlate metrics and logs across all of your Azure resources, as well as those on premise. By visualising and combining metrics from different sources you can better identify abnormal behaviour in your environments. Azure Monitor alerts can then be used to notify stakeholders of criticial incidents and can be configured to trigger remediation actions via automation or ensure availability by autoscaling.
+[Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview) is a powerful tool that can be used to correlate metrics and logs across all of your Azure resources, as well as those on premise. By visualising and combining metrics from different sources you can better identify abnormal behaviour in your environments. Azure Monitor alerts can then be used to notify stakeholders of critical incidents and can be configured to trigger remediation actions via automation or ensure availability by autoscaling.
 
 ![Azure Monitor Dashboard](/assets/img/azure-monitor-dashboard.png)
 
@@ -99,7 +99,7 @@ Where possible Azure Advisor recommendations take you directly to actionable fix
 
 ## Azure Resource Manager
 
-Azure has a low barrier of entry and creating resources via the Portal can be quick and easy, but over time this is an ineffective and risky way to manage your resources. Azure provides [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) as a service to automate the deployment of your resources. Often you want to produce multiple near identical environments in order to test an application or product through different stages before delivering changes into production. Using deployment automation ensures these environments are consistent. In addition by limiting access to deploy resources through other means, your deployment pipelines act as gates that can be used (with automated testing) to deliver safe and secure resources.
+Azure has a low barrier of entry and creating resources via the Portal can be quick and easy, but over time this is an ineffective and risky way to manage your resources. Azure provides [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) as a service to automate the deployment of your resources. Often you want to produce multiple near identical environments in order to test an application or product through different stages of your development lifecycle before delivering changes into production. Using deployment automation ensures these environments are consistent. In addition by limiting access to deploy resources through other means, your deployment pipelines act as gates that can be used (with automated testing and vulnerability scanning tools) to deliver safe and secure resources.
 
 ![Azure ARM templates](/assets/img/azure-arm-templates.png)
 
@@ -107,11 +107,11 @@ For more information on the different tools you can use to automate deployments 
 
 # Access Control
 
-When planning access to your Azure resources you need to consider the needs of your users and those administering your resources. User access can be managed via network controls and . Administrator access in Azure is managed in Azure via role based access control.
+When planning access to your Azure resources you need to consider the needs of your users and those administering your resources. User access is enforced through network controls and through whatever authentication (if required) is configured for your applications. Administrative access in Azure is managed via role based access control.
 
 ## Role Based Access Control
 
-By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement specific permissions for your Azure administrators so they have access just to the resources they require and are able to perform only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
+By using Azure [role based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) you can implement permissions for your Azure administrators so they have access to specific resources they require and are able to execute only the actions they need to in order to perform their duties. Implementing roles and access correctly in Azure is critical to securing your infrastructure. Over provisioning permissions could result in a compromised account causing significant harm or disruption, so you should ensure that you understand the permissions users need and limit them via roles and groups appropriately.
 
 ![Access Control](/assets/img/access-control.png)
 
@@ -123,6 +123,8 @@ Permissions in Azure can be set at the following levels:
 - Resource -- A specific resource in Azure (i.e a Virtual Machine, database etc.)
 
 Permissions are assigned via roles. You can use either the built-in roles (which provide pre-determined sets of permissions for various typical responsibilities) or you can create your own custom roles. Roles are additive, which means that if a user is a member of more than one role, they effectively have the combined permissions for both. Roles can now also feature [deny assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments), where a specific permission is blocked for a user. Deny assignments always take precedence over those allowed. 
+
+Users are managed for your tenant via Azure Active Directory (AD) and its important to consider enforcing a [Multi-factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) requirement for any users who have significant permissions within your subscriptions.
 
 ## Network Access Control
 
@@ -140,7 +142,7 @@ Controlling access in, out and within your networks is a basic tenant of IT secu
 
 Where as NSGs allow you to define network access at OSI layers 3 and 4, Azure Firewall allows you to filter traffic based on layers 3 - 7. This kind of filtering is able to inspect the contents of traffic coming in and out of your network to determine if they may be malicious. Threat intelligence-based filtering can alert or automatically deny access from known malicious IPs or domains. Azure Firewall is available as standard and [premium](https://docs.microsoft.com/en-us/azure/firewall/premium-features), with the premium version providing advanced capabilities for rapid detection of attacks by looking for specific patterns, to block things like malware, phishing, coin mining and trojan attacks.
 
-Distributed Denial of Service (DDoS) attacks attempt to force a service offline by overwhelming it with requests, making the service unavailable to legitimate users. Any internet facing service is vulnerable to DDoS attacks. Azure DDoS protection is a feature that can be enabled for a fixed monthly cost (currently £2,218/month in West Europe) to one or more of your VNETs within a specified tenant to protect up to 100 public IPs (with additional IPs being charged as overage). DDoS protection is an always-on service and attack mitigation is a fully automatic process. It also learns your traffic over time to tune itself to the profile that is most suitable for your service.
+Distributed Denial of Service (DDoS) attacks attempt to force a service offline by overwhelming it with requests, making the service unavailable to legitimate users. Any internet facing service is vulnerable to DDoS attacks. Azure DDoS Standard protection is a feature that can be enabled for a fixed monthly cost (currently £2,218/month in West Europe) to one or more of your VNETs within a specified tenant to protect up to 100 public IPs (with additional IPs being charged as overage). DDoS protection is an always-on service and attack mitigation is a fully automatic process. It also learns your traffic over time to tune itself to the profile that is most suitable for your service. There is a [basic level of DDoS protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-faq#are-services-unsafe-in-azure-without-the-service-) enabled by default in Azure, but Microsoft warns that the threshold at which this may trigger will already be at a level higher than most applications have the capacity to handle.
 
 Azure Web Application Firewall is a feature of Azure Application Gateway (a web traffic load balancer) that provides centralised protection of your services from common exploits and vulnerabilities, such as SQL injection and cross-site scripting. You enable WAF via your own custom policy where you define the rules you want to apply from one of the [OWASP Core rule sets](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-crs-rulegroups-rules?tabs=owasp32). Azure WAF is an additional cost vs deploying an Application Gateway without the WAF feature enabled. However if you have DDoS protection enabled on the tenant then you pay the standard Application Gateway pricing for WAF. In West Europe Application Gateway with WAF is charged at £77.59 a month, with data processing charged at £0.0061 per connection/month.
 
@@ -152,7 +154,7 @@ Your last line of defence against security intrusion and malicious disruption is
 
 [Azure Backup](https://docs.microsoft.com/en-us/azure/backup/backup-overview) provides a simple built-in solution to backup and restore your data in the cloud, as well as on-premise. Azure backup can be used to backup the following resources:
 
-- [On-premise files](https://docs.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix), folders and system state, usingg the Microsoft Azure Recovery Services (MARS) agent.
+- [On-premise files](https://docs.microsoft.com/en-us/azure/backup/backup-mabs-protection-matrix), folders and system state, using the Microsoft Azure Recovery Services (MARS) agent.
 - [Entire Azure VMs](https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-introduction) (Windows and Linux), or specific files, folders or system state.
 - [Azure Managed disks](https://docs.microsoft.com/en-us/azure/backup/backup-managed-disks)
 - [Azure File shares](https://docs.microsoft.com/en-us/azure/backup/backup-afs)
@@ -181,4 +183,4 @@ Site Recovery is a good solution for getting your VMs up and running quickly aft
 
 # Summary
 
-We hope you've found this introduction to security capabilities and tools in Azure useful. Remember that security is an ongoing practice and requires ownership and accountability to be effective. Microsoft provide the tools to surface threats in your infrastructure but its largely your responsibility to act on the information they provide. If you think MPFE can be of any assistance in securing your Azure resources, please do not hestiate to [get in touch with us](mailto:mark@mpfe.uk).
+We hope you've found this introduction to security capabilities and tools in Azure useful. Remember that security is an ongoing practice and requires ownership and accountability to be effective. Microsoft provide the tools to surface threats in your infrastructure but its largely your responsibility to act on the information they provide. If you think MPFE can be of any assistance in securing your Azure resources, please do not hesitate to [get in touch with us](mailto:mark@mpfe.uk).
