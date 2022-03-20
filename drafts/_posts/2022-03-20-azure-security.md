@@ -20,9 +20,9 @@ At a high level, this encourages you to consider:
 - How will you monitor, detect, and respond to threats within your cloud resources?
 - How will you manage the deployment of resources and control, manage, and monitor changes to your cloud infrastructure and applications?
 - How will you detect vulnerabilities in your cloud applications?
-- How will you control access to your cloud storage?
-- How will you limit access between specific devices and subnets and ensure that the minimum required access is enabled?
 - How will you detect and block malicious software on your Virtual Machines or other compute services?
+- How will you limit access between specific devices and subnets and ensure that the minimum required access is enabled?
+- How will you control access to your cloud storage?
 - How will you recover your service should malicious activity or disruption occur?
 - How will you limit, monitor, and control access to your Azure resources and manage access to your applications?
 
@@ -101,6 +101,7 @@ Where possible Azure Advisor recommendations take you directly to actionable fix
 
 > - _How will you manage the deployment of resources and control, manage, and monitor changes to your cloud infrastructure and applications?_
 > - _How will you detect vulnerabilities in your cloud applications?_
+> - _How will you detect and block malicious software on your Virtual Machines or other compute services?_
 
 While threat detection and management is key, prevention is better than a cure. Deploying infrastructure in Azure is likely to be an iterative and ongoing process for you. By utilizing CI/CD pipelines and infrastructure as code to automate your deployments you can ensure infrastructure changes are delivered safely and securely. By applying appropriate controls and monitoring around other changes made within your subscriptions you can remove the risk of uncontrolled or rogue changes introducing security risks.
 
@@ -115,6 +116,10 @@ For more information on the different tools you can use to automate deployments 
 ## Vulnerability Scanning
 
 By deploying Azure's [Vulnerability Assessment agent](https://docs.microsoft.com/en-us/azure/defender-for-cloud/deploy-vulnerability-assessment-vm) (provided by Qualys) on to your Virtual Machines in both pre-production and production application vulnerabilities can be surfaced and reported to Defender for Cloud for mitigation. The agent can be deployed directly from Defender for Cloud and/or you can enable an Azure policy to ensure its deployed by default on to any new and existing Virtual Machines.
+
+## Antimalware
+
+[Microsoft Antimalware](https://docs.microsoft.com/en-us/azure/security/fundamentals/antimalware) is a free agent that can be deployed to identify and remove viruses and other malware. It is disabled by default on the Cloud Services platform and not installed by default on the Virtual Machines platform, so you need to ensure you enable or deploy it for your compute. It can be enabled on Virtual Machines via a simple VM Extension deployment. [Azure Policy](https://github.com/Azure/azure-policy/blob/master/samples/built-in-policy/deploy-default-antimalware-extension-for-windows-server/azurepolicy.json) could be leveraged to ensure it is deployed by default on new and existing VMs. Note that Microsoft Antimalware is only for Windows systems. You will need to deploy a third party tool to protect Azure Linux Virtual Machines.
 
 # Access Control
 
@@ -205,3 +210,5 @@ Site Recovery is a good solution for getting your VMs up and running quickly aft
 # Summary
 
 We hope you've found this introduction to security capabilities and tools in Azure useful. Remember that security is an ongoing practice and requires ownership and accountability to be effective. Microsoft provide the tools to surface threats in your infrastructure but its largely your responsibility to act on the information they provide. If you think MPFE can be of any assistance in securing your Azure resources, please do not hesitate to [get in touch with us](mailto:mark@mpfe.uk).
+
+For further reading on this topic, we recommend the [Azure security best practices and patterns](https://docs.microsoft.com/en-us/azure/security/fundamentals/best-practices-and-patterns) guide.
