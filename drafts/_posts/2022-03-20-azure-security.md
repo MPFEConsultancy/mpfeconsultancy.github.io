@@ -168,7 +168,7 @@ Users are managed for your tenant via Azure Active Directory (AD) and its import
 
 ## Storage Network Security
 
-Azure storage account are publicly accessible by default, but there are way to configure and customise [network security](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal). If you only need one or more storage accounts to be accessible from other resources within Azure, you can configure private endpoints, which assigns a private IP address from your virtual network to the storage account so that all traffic between your network and the storage account traverse a private link. You can also specify public IP addresses that you want to permit access over the internet by setting storage account specific firewall rules.
+Azure storage accounts are publicly accessible by default, but there are way to configure and customise [network security](https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security?tabs=azure-portal). If you only need your storage account/s to be accessible from other resources within Azure, you can configure private endpoints, which assigns a private IP address from your virtual network to the storage account so that all traffic between your network and the storage account traverse a private link. You can also specify public IP addresses that you want to permit access over the internet by setting storage account specific firewall rules.
 
 # Backup and Disaster Recovery
 
@@ -205,7 +205,7 @@ Via your Azure Backup policies you define how long your backups are retained. Yo
 
 ![Disaster Recovery](/assets/img/disaster-recovery.jpg)
 
-Site Recovery is a good solution for getting your VMs up and running quickly after a disaster, but your DR strategy needs to consider all of the resource types your using in Azure. Most have DR features built in, such as the ability for data to be geo-replicated, but you'll need to ensure these features are enabled and that you understand if and when you need to trigger a failover as part of your recovery strategy or testing. You also may need to consider how you will redirect users and traffic to the secondary location as part of a DR failover, and services such as [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) can be used to automate this.
+Site Recovery is a good solution for getting your VMs up and running quickly after a disaster, but your DR strategy needs to consider all of the resource types you're using in Azure. Most have DR features built in, such as the ability for data to be geo-replicated, but you'll need to ensure these features are enabled and that you understand if and when you need to trigger a failover as part of your recovery strategy or testing. You also may need to consider how you will redirect users and traffic to the secondary location as part of a DR failover, and services such as [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) can be used to automate this.
 
 # Summary
 
