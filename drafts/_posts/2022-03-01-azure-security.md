@@ -165,15 +165,19 @@ To use Azure Backup you deploy a Recovery Services Vault which is used to define
 
 ![Azure Backup](/assets/img/azure-backup.png)
 
-Via your Azure Backup policies you define the long your backups are retained. You can specify daily, weekly, monthly and yearly backup points, allowing you to retain backups for a long period of time but at a lower frequency than more recent backups.
+Via your Azure Backup policies you define how long your backups are retained. You can specify daily, weekly, monthly and yearly backup points, allowing you to retain backups for a long period of time but at a lower frequency than more recent backups.
 
 ## Disaster Recovery
 
+[Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview) is the built-in Azure Disaster Recovery Service. Site Recovery works by replicating your workloads to a secondary location so that when an outage occurs you can fail over and resume service quickly. With Site Recovery you can replicate:
 
-
-[Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview)
+- Azure VMs from one region to another.
+- On-premise VMWare VMs, Hyper-V VMs, physical servers (Windows and Linux)and Azure Stack VMs to Azure or to a secondary site.
+- AWS Windows instances to Azure.
 
 ![Disaster Recovery](/assets/img/disaster-recovery.jpg)
+
+Site Recovery is a good solution for getting your VMs up and running quickly after a disaster, but your DR strategy needs to consider all of the resource types your using in Azure. Most have DR features built in, such as the ability for data to be geo-replicated, but you'll need to ensure these features are enabled and that you understand if and when you need to trigger a failover as part of your recovery strategy or testing. You also may need to consider how you will redirect users and traffic to the secondary location as part of a DR failover, and services such as [Azure Traffic Manager](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) can be used to automate this.
 
 # Summary
 
