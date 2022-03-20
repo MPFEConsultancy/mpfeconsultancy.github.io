@@ -174,7 +174,7 @@ Via your Azure Backup policies you define how long your backups are retained. Yo
 [Azure Site Recovery](https://docs.microsoft.com/en-gb/azure/site-recovery/site-recovery-overview) is the built-in Azure Disaster Recovery Service. Site Recovery works by replicating your workloads to a secondary location so that when an outage occurs you can fail over and resume service quickly. With Site Recovery you can replicate:
 
 - Azure VMs from one region to another.
-- On-premise VMWare VMs, Hyper-V VMs, physical servers (Windows and Linux)and Azure Stack VMs to Azure or to a secondary site.
+- On-premise VMWare VMs, Hyper-V VMs, physical servers (Windows and Linux) and Azure Stack VMs to Azure or to a secondary site.
 - AWS Windows instances to Azure.
 
 ![Disaster Recovery](/assets/img/disaster-recovery.jpg)
