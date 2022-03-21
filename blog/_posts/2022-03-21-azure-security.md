@@ -22,9 +22,9 @@ At a high level, this encourages you to consider:
 - How will you detect vulnerabilities in your cloud applications?
 - How will you detect and block malicious software on your Virtual Machines or other compute services?
 - How will you limit access between specific devices and subnets and ensure that the minimum required access is enabled?
+- How will you limit, monitor, and control access to your Azure resources and manage access to your applications?
 - How will you control access to your cloud storage?
 - How will you recover your service should malicious activity or disruption occur?
-- How will you limit, monitor, and control access to your Azure resources and manage access to your applications?
 
 # Monitor, Detect and Respond
 
