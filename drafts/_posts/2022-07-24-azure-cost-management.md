@@ -8,9 +8,16 @@ hide_last_modified: true
 author: mark
 ---
 
-MPFE recently worked with a customer who had been using Azure since 2016. The costs of the Production system were largely consistent and understood, but the costs of Development and Integration systems varied from month to month and were frequently higher than Production. While this isn't necessarily unusual, there were several issues:
 
-- Costs were only reviewed retrospectively every 3 months and at a high level (per subscription or per resource type)
-- Environments were only intermittently used, but remained permanently deployed because there was a lack of confidence that they could be redeployed quickly or successfully when required
-- No budgets have been defined, so no benchmarks existed regarding what costs should typically look like
-- Over time there was a build up of waste due to various experiments that had been run and not cleaned up.
+
+# Use the Cost Management dashboard to understand your costs
+
+# Ensure ownership and perform regular reviews
+
+# Configure budgets and billing alerts
+
+# Use multiple subscriptions as a way to organise and control costs
+
+# Fully automate the creation and destruction of environments (and get good at it)
+
+# Control waste
