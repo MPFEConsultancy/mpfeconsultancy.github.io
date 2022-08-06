@@ -12,7 +12,12 @@ author: mark
 
 # Use the Cost Management dashboard to understand your costs
 
+- Look across different time periods to understand your trends / cost patterns. Costs are unlikely to be static.
+
 # Ensure ownership and perform regular reviews
+
+- Cost Advisor
+- Automate: Use of PowerShell to total up costs for specific periods / perform comparisons
 
 # Configure budgets and billing alerts
 
@@ -21,3 +26,5 @@ author: mark
 # Fully automate the creation and destruction of environments (and get good at it)
 
 # Control waste
+
+# Purchase Reservations
