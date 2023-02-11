@@ -22,7 +22,11 @@ The Cost Analysis tool allows you to access graphs or tables of information to u
 
 I don't typically find this view particularly useful, because a lot of cloud costs are consumption based they are rarely fixed and linear. I prefer the Daily Cost view (click View > Daily Costs) this shows you the last 30 days of cost per day, and then groups those costs by Resource Group. Note that it will show you the top 10 most expensive Resource Groups and then will group all others under an entry named "Other".
 
-From the Daily Cost view you can get an immediate sense of where you most expensive resources are and how your costs fluctuate on a day to day basis. You can click on the graph to filter for specific Resource Groups. You can then change the "Group By" option to be "Resource", to see which specific resources are the most expensive within that Resource Group. From the Subscription level it can also be informative to group your costs by "Service Name" to get a view of which types of services are you biggest costs, such as Virtual Machines, Networking or Storage.
+From the Daily Cost view you can get an immediate sense of where you most expensive resources are and how your costs fluctuate on a day to day basis. You can click on the graph to filter for specific Resource Groups. You can then change the "Group By" option to be "Resource", to see which specific resources are the most expensive within that Resource Group. 
+
+![Azure Cost Management Portal Daily Costs](/assets/img/azure-cost-analysis-daily.png)
+
+From the Subscription level it can also be informative to group your costs by "Service Name" to get a view of which types of services are you biggest costs, such as Virtual Machines, Networking or Storage.
 
 # Ensure ownership and perform regular reviews
 
