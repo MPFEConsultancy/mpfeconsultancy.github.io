@@ -3,7 +3,7 @@ layout: post
 title: Azure Cost Management
 image: /assets/img/azure-cost-management.png
 description: >
-  One of the key advantages of Cloud Computing is that it is very easy to start deploying and using resources. However without careful management, costs can quickly build up and become uncontrolled. This article explores some of the ways in which Azure empowers you to monitor and control costs. By doing so Cloud Computing can give you both competitive and economic advantages.
+  One of the key advantages of Cloud Computing is that it is very easy to start deploying and using resources. However without careful management, costs can quickly build up and become uncontrolled. This article explores some of the ways in which Azure empowers you to monitor and control costs. With careful governance Cloud Computing can give you both competitive and economic advantages.
 hide_last_modified: true
 author: mark
 ---
@@ -27,4 +27,10 @@ author: mark
 
 # Control waste
 
+
 # Purchase Reservations
+
+
+# Combine resources
+
+By having a single implementation of Log Analytics, you may reach ingestion levels that then enable the purchase of capacity reservations.
