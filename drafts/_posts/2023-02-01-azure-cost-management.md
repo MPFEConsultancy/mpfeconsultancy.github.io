@@ -43,8 +43,11 @@ Azure provides a tool within Cost Management called "Advisor Recommendations". T
 
 # Configure budgets and billing alerts
 
+Depending on what kind of cloud resources you consume and how you use them, your costs may vary significantly from month to month. However it's likely that by reviewing historical trends you can get an idea of what a normal cost looks like. Alternatively you may have a specific budget you are expected to work within. Azure provides the ability to configure budgets and billing alerts in the Cost Management portal so that you can be informed during the month if your costs are starting to escalate close to or beyond your ideal maximum. Configuring these is very important to avoid being surprised by excessive costs at the end of a month and to give you an opportunity during the month to correct out of control costs by stopping, removing or scaling in resources.
 
+To configure budgets go to Cost Management > Budgets. Click Add and fill in the details. You can create multiple budgets and use the filter option to scope them to different resource groups, resources, reservations etc. I recommend creating at a minimum a budget for the overall subscription costs. The budget tool helpfully showing the previous 6 months of costs and forecasting the next 6 months to help you to determine a suitable level. Once configured your budgets will also be visible in the cost analysis view.
 
+When configuring your budget/s ensure you also configure an alert. You can set this to trigger at a specific percentage of your budget, so for example if you want to be alerted when you have consumed 90% of your budget you can do so. These alerts can be linked to action groups which can then notify stakeholders by email, and/or can invoke a number of other actions such as running an azure automation / logic app / function that you might (for example) use to automatically scale in or remove non-essential resources.
 # Use multiple subscriptions as a way to organise and control costs
 
 
