@@ -28,7 +28,7 @@ From the Daily Cost view you can get an immediate sense of where you most expens
 
 From the Subscription level it can also be informative to group your costs by "Service Name" to get a view of which types of services are you biggest costs, such as Virtual Machines, Networking or Storage.
 
-# Ensure ownership and perform regular reviews
+# Ensure ownership and regularly review
 
 - Have a technical resource be responsible for understanding and controlling costs so they are empowered to make changes quickly.
 
@@ -43,7 +43,7 @@ Azure provides a tool within Cost Management called "Advisor Recommendations". T
 
 # Configure budgets and billing alerts
 
-Depending on what kind of cloud resources you consume and how you use them, your costs may vary significantly from month to month. However it's likely that by reviewing historical trends you can get an idea of what a normal cost looks like. Alternatively you may have a specific budget you are expected to work within. Azure provides the ability to configure budgets and billing alerts in the Cost Management portal so that you can be informed during the month if your costs are starting to escalate close to or beyond your ideal maximum. Configuring these is very important to avoid being surprised by excessive costs at the end of a month and to give you an opportunity during the month to correct out of control costs by stopping, removing or scaling in resources.
+Depending on what kind of cloud resources you consume and how you use them, your costs may vary significantly from month to month. However it's likely that by reviewing historical trends you can get an idea of what normal costs look like. You may also have a specific corporate budget you are expected to operate within. Azure provides the ability to configure budgets and billing alerts in the Cost Management portal so that you can be informed during the month if your costs are starting to escalate close to or beyond your ideal maximum. Configuring these is very important to avoid being surprised by excessive costs at the end of a month and to give you an opportunity during the month to correct out of control costs by stopping, removing or scaling in resources.
 
 To configure budgets go to Cost Management > Budgets. Click Add and fill in the details. You can create multiple budgets and use the filter option to scope them to different resource groups, resources, reservations etc. I recommend creating at a minimum a budget for the overall subscription costs. The budget tool helpfully showing the previous 6 months of costs and forecasting the next 6 months to help you to determine a suitable level. Once configured your budgets will also be visible in the cost analysis view.
 
