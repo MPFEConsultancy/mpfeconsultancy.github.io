@@ -18,9 +18,9 @@ When leveraging cloud computing it is important to give consideration to how you
 
 Within the Azure Portal under All Services > Management and Governance you'll find Cost Management + Billing > Cost Management, within which there is Cost Analysis, Cost Alerts and Budgets. You can also get to these tools from the side bar of a Subscriptions or Resource Group, allowing you to quickly access cost information or configure alerts for a specific subset of resources.
 
-The Cost Analysis tool allows you to access graphs or tables of information to understand your costs. By default you're shown the Accumulated Costs view, which shows you the current total cost for the month, how it has accumulated over that month and attempts to project what your cost will be by the end of the month based on the current trend:
-
 ![Azure Cost Management Portal](/assets/img/azure-cost-analysis.png)
+
+The Cost Analysis tool allows you to access graphs or tables of information to understand your costs. By default you're shown the Accumulated Costs view, which shows you the current total cost for the month, how it has accumulated over that month and attempts to project what your cost will be by the end of the month based on the current trend:
 
 You or may not find this view particularly useful, because a lot of cloud costs are consumption based they are rarely fixed and linear. Switching to the Daily Cost view (click View > Daily Costs) can often be more informative as it shows you the last 30 days (or period of your choice) of cost per day, and then groups those costs by Resource Group. Note that the chart view will only show you the top 10 most expensive Resource Groups and then will group all others under an entry named "Other", which you can click on to drill into.
 
@@ -64,9 +64,25 @@ Note that there may be some resources that are of no benefit to destroy if you'v
 
 You also may not wish to destroy resources that contain stores of data, such as databases or storage accounts if the contents of these are important or difficult to recreate. If this is the case then you can automate the scale in / down of these resources to ensure they are run as cheaply as possible. For example, scaling a SQL Server database down to the lowest tier (S0) results in a cost of about £12 a month, which is relatively insignificant and may be a cheaper / simpler option than taking and retaining a backup of the database.
 
-# Control waste
+# Ensure resource ownership
 
+- **Use policy and alerting to ensure the purpose/ownership of all resources is clear.**
 
+The ability to create resources quickly in the cloud means that development teams can easily self provision resources that they require as part of implementation or experimentation. The ability to self serve removes a lot of potentially wasted time moving work back and forth between teams (as it might have done in the past, when an infrastructure team would need to provision resources). However without suitable controls or monitoring in place, resources can easily be forgotten (long after an experiment is complete), ultimately resulting in the unnecessary consumption of cost.
 
-# Purchase Reservations
+Cloud providers recommend you implement a good tagging strategy as part of your cloud adoption. Tags can be assigned to all resources and can be any key/value that is useful to you to organise resources. You can use Azure Policy to create a tagging policy that will automatically apply tags during resource creation, or require that a value for certain tags be applied. For example you could create a policy that requires the completion of an "Owner" tag. Resources would fail to deploy without this tag.
+
+If you are implementing controls on an already established environment, you may need to go through resources one at a time to identify and understand them, hopefully finding ones that can be eliminated along the way.
+
+Azure Monitor features a sophisticated alerting tool. You can utilise this to create alerts on the creation of resource groups. Use this to ensure that appropriate stakeholders are made aware any time a new resource group is created (i.e such as your DevOps Engineers if they monitor and control costs). This can be important not only for cost management but for security, as you will want to know if any unexpected resource creation is occurring in your subscriptions and make sure any resources created are suitably secured. 
+
+To configure such an alert, go Azure Monitor > Alert > Alert Rules. Create a new Alert Rule and scope it to your subscription. Under condition select the signal called "Create Resource Group". For Action, select or create an action group that will notify the appropriate stakeholders (such as by email, or chat webhook).
+
+![Azure Create Alert Rule for Create Resource Group activity](/assets/img/azure-create-alert-rule.png)
+
+If you want to be notified (or have some other action occur) whenever any resource creation or modify operation occurs, you can configure an Alert Rule for the "Create Deployment" signal. Most changes (i.e even ones performed in the Portal) configure a deployment to occur, even if you haven't explicitly executed an ARM template.
+
+# Purchase reservations
+
+- **Use reservations to get the best prices for resources you know you will need in the medium to long term.**
 
