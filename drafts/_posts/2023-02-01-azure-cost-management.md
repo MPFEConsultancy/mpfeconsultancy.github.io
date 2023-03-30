@@ -86,3 +86,17 @@ If you want to be notified (or have some other action occur) whenever any resour
 
 - **Use reservations to get the best prices for resources you know you will need in the medium to long term.**
 
+When you know that you will consistently need a service for the foreseeable future, purchasing a reservation can be a great way to reduce costs. You can buy 1 or 3 year reservations for services such as Virtual Machines, Databases and Storage. Purchasing a reservation can get you up to 72% cheaper prices than the pay as you go pricing. You're not entirely locked in either, if your needs change you can exchange a reservation for another of the same type (such as a different type of Virtual Machine) and also refund reservations up to $50k in a 12 month rolling window, if you no longer need it. Azure Advisor is a good place to look for potential reservations that may benefit you.
+
+Azure recently introduced [Azure Savings Plan for Compute](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview), which is a more flexible way to make a reservation purchase than can save you up to 65% on pay as you go pricing. You commit to a certain hourly usage of compute which is then billed at a discounted price. If you use less than the commitment, you pay for the committed amount regardless. Usage above the commitment is billed at standard pay as you go pricing. The plan covers most Virtual Machine types, as well as App Service, Functions, Container Instances and Dedicated Host services. 
+
+# Summary
+
+To summarise, some key strategies you can employ to reduce your Azure costs include:
+
+- Understand and monitor your costs, get alerts when your bill gets higher than expected. Make sure there's someone empowered to track and control costs.
+- Automate, automate, automate the deployment _and_ destruction of resources so that you only run services when you need them.
+- Be alerted when new resources are created / configure policies to ensure identifying ownership is required as part of deployment.
+- Purchase reservations when you know you're going to have long term consistent usage.
+
+If MPFE can be of any assistance in helping you understand, control or reduce your Azure costs, please [get in touch](enquiries@mpfe.uk).
