@@ -10,9 +10,11 @@ author: mark
 
 > The best time to control your cloud computing costs was X years ago. The second best time is now.
 
-When leveraging cloud computing it is important to give consideration to how you will monitor and control your costs. The best time to do this is as soon as you first start to utilise the cloud, but if your initial focus is on velocity you could later find yourself with a lot of uncontrolled costs. It's fortunately never too late to start managing them. In this article we will explore the tools and techniques you can use on Microsoft Azure to understand and (hopefully) reduce your costs.
+When leveraging cloud computing it is important to give consideration to how you will monitor and control your costs. The best time to do this is when you first utilise the cloud, but if your initial focus is on velocity and experimentation you can later find yourself with a lot of uncontrolled expense, particularly once a project is well established and if staff churn has occurred. In this article we will explore the tools and techniques you can use on Microsoft Azure to understand and (hopefully) reduce your costs.
 
 # Use the Cost Management dashboard to understand your costs
+
+- Use the built in tools Azure provides to explore and understand your costs.
 
 Within the Azure Portal under All Services > Management and Governance you'll find Cost Management + Billing > Cost Management, within which there is Cost Analysis, Cost Alerts and Budgets. You can also get to these tools from the side bar of a Subscriptions or Resource Group, allowing you to quickly access cost information or configure alerts for a specific subset of resources.
 
@@ -20,7 +22,7 @@ The Cost Analysis tool allows you to access graphs or tables of information to u
 
 ![Azure Cost Management Portal](/assets/img/azure-cost-analysis.png)
 
-I don't typically find this view particularly useful, because a lot of cloud costs are consumption based they are rarely fixed and linear. I prefer the Daily Cost view (click View > Daily Costs) this shows you the last 30 days of cost per day, and then groups those costs by Resource Group. Note that it will show you the top 10 most expensive Resource Groups and then will group all others under an entry named "Other".
+You or may not find this view particularly useful, because a lot of cloud costs are consumption based they are rarely fixed and linear. Switching to the Daily Cost view (click View > Daily Costs) can often be more informative as it shows you the last 30 days (or period of your choice) of cost per day, and then groups those costs by Resource Group. Note that the chart view will only show you the top 10 most expensive Resource Groups and then will group all others under an entry named "Other", which you can click on to drill into.
 
 From the Daily Cost view you can get an immediate sense of where you most expensive resources are and how your costs fluctuate on a day to day basis. You can click on the graph to filter for specific Resource Groups. You can then change the "Group By" option to be "Resource", to see which specific resources are the most expensive within that Resource Group. 
 
@@ -28,33 +30,37 @@ From the Daily Cost view you can get an immediate sense of where you most expens
 
 From the Subscription level it can also be informative to group your costs by "Service Name" to get a view of which types of services are you biggest costs, such as Virtual Machines, Networking or Storage.
 
-# Ensure ownership and regularly review
+# Ensure ownership and perform regular reviews
 
 - Have a technical resource be responsible for understanding and controlling costs so they are empowered to make changes quickly.
 
-It is important for someone to be responsible for the management of costs, and ideally that person (or people) should be able to both review costs and control them. In an ideal world, everyone would be responsible and motived to ensure that they were using the Cloud as efficiently as possible, but in reality this is rarely the case and you should be wary of a responsibility being so broadly applied that it ultimately ends up belonging to no one. Equally be wary of making the control of costs the responsibility of the management team. This can have cause friction as management want to drive down cost without understanding why various cloud resources have been created, while the technical people want their resources to exist as simply and easily as possible to ease the flow of technical work.
+It is important for someone to be responsible for the management of costs, and ideally that person (or people) should be able to both review costs and control them. In an ideal world, everyone would be responsible and motived to ensure that they were using the Cloud as efficiently as possible, but this is likely optimistic and you should be wary of a responsibility being so broadly applied that it ultimately ends up belonging to no one. Equally be wary of making the control of costs the responsibility of the management team. This can cause friction as management (of course) want to drive down cost, but may lack understanding of why various cloud resources have been created, while the technical people want their resources to exist as simply and easily as possible to ease the flow of their technical work.
 
 The role of DevOps Engineer can be well placed to manage Cloud costs, as they have a good understanding of the technical needs of the Development and Operations teams, develop automation that can simplify the creation or modification of resources and can (typically) directly execute changes to resources.
 
-Azure provides a tool within Cost Management called "Advisor Recommendations". This performs 
-
-- Cost Advisor
-- Automate: Use of PowerShell to total up costs for specific periods / perform comparisons
+Azure provides a tool called Advisor that provides a list of recommendations to optimise costs based on the resources you have in your subscriptions. You can access this from Cost Management, or by searching in the portal for "Advisor" which can then show you cost recommendations across all of your subscriptions. I recommend checking Advisor on a regular basis, but be wary that it will make recommendations based on the patterns of usage its seen in the last 7, 30 or 60 days (you can select this "look back" period in Advisor and the recommendations will refresh accordingly). If your usage patterns are unpredictable then the recommendations may not always be useful, but they are always worth assessing, particularly because the Azure platform changes all the time and they can then alert you when new platform options may benefit you.  Advisor will make suggestions such as resizing Virtual Machines, switching to or from autoscaling options (such as within Cosmos DB), enabling auto stop/start of VMs etc. 
 
 # Configure budgets and billing alerts
 
+- Be alerted when costs become higher than expected.
+
 Depending on what kind of cloud resources you consume and how you use them, your costs may vary significantly from month to month. However it's likely that by reviewing historical trends you can get an idea of what normal costs look like. You may also have a specific corporate budget you are expected to operate within. Azure provides the ability to configure budgets and billing alerts in the Cost Management portal so that you can be informed during the month if your costs are starting to escalate close to or beyond your ideal maximum. Configuring these is very important to avoid being surprised by excessive costs at the end of a month and to give you an opportunity during the month to correct out of control costs by stopping, removing or scaling in resources.
 
-To configure budgets go to Cost Management > Budgets. Click Add and fill in the details. You can create multiple budgets and use the filter option to scope them to different resource groups, resources, reservations etc. I recommend creating at a minimum a budget for the overall subscription costs. The budget tool helpfully showing the previous 6 months of costs and forecasting the next 6 months to help you to determine a suitable level. Once configured your budgets will also be visible in the cost analysis view.
+To configure budgets go to Cost Management > Budgets. Click Add and fill in the details. You can create multiple budgets and use the filter option to scope them to different resource groups, resources, reservations etc. I recommend creating at a minimum a budget for the overall subscription costs. The budget tool helpfully shows the previous 6 months of costs and forecasts the next 6 months to help you to determine a suitable level, if your confident the current level of consumption is valid. Once configured your budgets will also be visible in the cost analysis view.
 
-When configuring your budget/s ensure you also configure an alert. You can set this to trigger at a specific percentage of your budget, so for example if you want to be alerted when you have consumed 90% of your budget you can do so. These alerts can be linked to action groups which can then notify stakeholders by email, and/or can invoke a number of other actions such as running an azure automation / logic app / function that you might (for example) use to automatically scale in or remove non-essential resources.
-# Use multiple subscriptions as a way to organise and control costs
+When configuring your budget/s ensure you also configure an alert. You can set this to trigger at a specific percentage of your budget, so for example if you want to be alerted when you have consumed 90% of your budget you can do so. These alerts can be linked to action groups which can then notify stakeholders by email, and/or can invoke a number of other actions such as running an azure automation / logic app / function that you might (for example) use to automatically scale in, stop or remove non-essential resources.
 
+Don't forget to review your budgets regularly to make sure they remain sensible. If costs have decreased, reduce your budget accordingly.
 
+# Fully automate the creation and destruction of your resources (and get good at it)
 
-# Fully automate the creation and destruction of environments (and get good at it)
+- Use automation to create / destroy resources on demand.
 
+The easiest way to save money is to not spend money. One of the major benefits of the cloud is the ability to easily and fully automate the creation, configuration and destruction of resources. Have a look at my previous blog post for some of the [Infrastructure as Code tools that are available for Azure](https://mpfe.uk/blog/2021-05-01-Azure-infrastructure-as-code/). Obviously every implementation is different, but its not unusual for a customer to require a series of non-Production environments that are used for testing changes into Production. Depending on how often you implement changes, running these environments at full scale full time may be wasteful. By utilising Infrastructure as Code and automation pipelines, you can make the creation and destruction of various resources a one-click or fully automated scheduled operation. Even the most complex environments can be deployed within a matter of hours and with suitable planning and automation in place this is unlikely to block the flow of work. The creation and destruction of resources could also form part of a testing pipeline, so that resources are deployed, automated tests run and then destroyed once complete.
 
+Note that there may be some resources that are of no benefit to destroy if you've removed other resources that mean they won't be used. A good example of this is Log Analytics / Application Insights. If you are using the default retention periods (30 days for Log Analytics, 90 days for Application Insights), these only incur cost when log data is consumed, so if you've removed or stopped the resources that write into these, there may be little to no cost in keeping the historical data until it expires based on the retention.
+
+You also may not wish to destroy resources that contain stores of data, such as databases or storage accounts if the contents of these are important or difficult to recreate. If this is the case then you can automate the scale in / down of these resources to ensure they are run as cheaply as possible. For example, scaling a SQL Server database down to the lowest tier (S0) results in a cost of about £12 a month, which is relatively insignificant and may be a cheaper / simpler option than taking and retaining a backup of the database.
 
 # Control waste
 
