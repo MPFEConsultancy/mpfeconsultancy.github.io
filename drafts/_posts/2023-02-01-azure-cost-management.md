@@ -14,7 +14,7 @@ When leveraging cloud computing it is important to give consideration to how you
 
 # Use the Cost Management dashboard to understand your costs
 
-- Use the built in tools Azure provides to explore and understand your costs.
+- **Use the built in tools Azure provides to explore and understand your costs.**
 
 Within the Azure Portal under All Services > Management and Governance you'll find Cost Management + Billing > Cost Management, within which there is Cost Analysis, Cost Alerts and Budgets. You can also get to these tools from the side bar of a Subscriptions or Resource Group, allowing you to quickly access cost information or configure alerts for a specific subset of resources.
 
@@ -32,7 +32,7 @@ From the Subscription level it can also be informative to group your costs by "S
 
 # Ensure ownership and perform regular reviews
 
-- Have a technical resource be responsible for understanding and controlling costs so they are empowered to make changes quickly.
+- **Have a technical resource be responsible for understanding and controlling costs so they are empowered to make changes quickly.**
 
 It is important for someone to be responsible for the management of costs, and ideally that person (or people) should be able to both review costs and control them. In an ideal world, everyone would be responsible and motived to ensure that they were using the Cloud as efficiently as possible, but this is likely optimistic and you should be wary of a responsibility being so broadly applied that it ultimately ends up belonging to no one. Equally be wary of making the control of costs the responsibility of the management team. This can cause friction as management (of course) want to drive down cost, but may lack understanding of why various cloud resources have been created, while the technical people want their resources to exist as simply and easily as possible to ease the flow of their technical work.
 
@@ -42,11 +42,13 @@ Azure provides a tool called Advisor that provides a list of recommendations to 
 
 # Configure budgets and billing alerts
 
-- Be alerted when costs become higher than expected.
+- **Be alerted when costs become higher than expected.**
 
 Depending on what kind of cloud resources you consume and how you use them, your costs may vary significantly from month to month. However it's likely that by reviewing historical trends you can get an idea of what normal costs look like. You may also have a specific corporate budget you are expected to operate within. Azure provides the ability to configure budgets and billing alerts in the Cost Management portal so that you can be informed during the month if your costs are starting to escalate close to or beyond your ideal maximum. Configuring these is very important to avoid being surprised by excessive costs at the end of a month and to give you an opportunity during the month to correct out of control costs by stopping, removing or scaling in resources.
 
 To configure budgets go to Cost Management > Budgets. Click Add and fill in the details. You can create multiple budgets and use the filter option to scope them to different resource groups, resources, reservations etc. I recommend creating at a minimum a budget for the overall subscription costs. The budget tool helpfully shows the previous 6 months of costs and forecasts the next 6 months to help you to determine a suitable level, if your confident the current level of consumption is valid. Once configured your budgets will also be visible in the cost analysis view.
+
+![Azure Create Monthly Budget](/assets/img/azure-create-monthly-budget.png)
 
 When configuring your budget/s ensure you also configure an alert. You can set this to trigger at a specific percentage of your budget, so for example if you want to be alerted when you have consumed 90% of your budget you can do so. These alerts can be linked to action groups which can then notify stakeholders by email, and/or can invoke a number of other actions such as running an azure automation / logic app / function that you might (for example) use to automatically scale in, stop or remove non-essential resources.
 
@@ -54,7 +56,7 @@ Don't forget to review your budgets regularly to make sure they remain sensible.
 
 # Fully automate the creation and destruction of your resources (and get good at it)
 
-- Use automation to create / destroy resources on demand.
+- **Use automation to create / destroy resources on demand.**
 
 The easiest way to save money is to not spend money. One of the major benefits of the cloud is the ability to easily and fully automate the creation, configuration and destruction of resources. Have a look at my previous blog post for some of the [Infrastructure as Code tools that are available for Azure](https://mpfe.uk/blog/2021-05-01-Azure-infrastructure-as-code/). Obviously every implementation is different, but its not unusual for a customer to require a series of non-Production environments that are used for testing changes into Production. Depending on how often you implement changes, running these environments at full scale full time may be wasteful. By utilising Infrastructure as Code and automation pipelines, you can make the creation and destruction of various resources a one-click or fully automated scheduled operation. Even the most complex environments can be deployed within a matter of hours and with suitable planning and automation in place this is unlikely to block the flow of work. The creation and destruction of resources could also form part of a testing pipeline, so that resources are deployed, automated tests run and then destroyed once complete.
 
