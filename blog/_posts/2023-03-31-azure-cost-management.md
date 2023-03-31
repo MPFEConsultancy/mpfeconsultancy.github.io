@@ -8,7 +8,7 @@ hide_last_modified: true
 author: mark
 ---
 
-> The best time to control your cloud computing costs was X years ago. The second best time is now.
+> "The best time to control your cloud computing costs was 2 years ago. The second best time is now."
 
 When leveraging cloud computing it is important to give consideration to how you will monitor and control your costs. The best time to do this is as you first start to utilise the cloud, but if your initial focus was on velocity and experimentation you may now find yourself with a lot of uncontrolled expense, particularly if staff churn has occurred. In this article we will explore the tools and techniques you can use on Microsoft Azure to understand and (hopefully) reduce your costs.
 
