@@ -24,14 +24,17 @@ Phishing attacks trick individuals into revealing sensitive information (e.g., p
 
 Spoofing is a type of cyberattack where an attacker impersonates a trusted entity to deceive a target, often to gain unauthorized access to systems, steal sensitive information, or carry out other malicious activities. The goal is to make the interaction appear legitimate so that the victim takes a desired action, such as clicking a link, sharing credentials, or executing unauthorized transactions. Spyware runs silently on the system to secretly monitor a users activities and key strokes, to collect data and passwords.
 
+## Credential stuffing
+
+Credential stuffing is a type of cyberattack where attackers use stolen username-password combinations, often obtained from data breaches, to attempt unauthorized access to multiple accounts. The attack exploits the common practice of password reuse across different platforms. If a platform that you've previously used suffered a data breach (in which usernames and passwords were stolen) then your credentials may have been exposed, and an attacker can attempt to use it to access other systems where you may have used the same password.
 
 ## Malware
 
 Malware is malicious software, including viruses, worms, Trojans, ransomware, and spyware, designed to disrupt, damage, or gain unauthorized access to systems. Often disguised as a legitimate program, once executed malicious code can cause damage and spread to other systems on the network. Ransomware will lock users our of their system or files until a ransom has been paid (usually demanded by the attacker via a cryptocurrency for anonymity).
 
-## Credential Stuffing
+## System Vulnerabilities
 
-Credential stuffing is a type of cyberattack where attackers use stolen username-password combinations, often obtained from data breaches, to attempt unauthorized access to multiple accounts. The attack exploits the common practice of password reuse across different platforms. If a platform that you've previously used suffered a data breach (in which usernames and passwords were stolen) then your credentials may have been exposed, and an attacker can attempt to use it to access other systems where you may have used the same password.
+System vulnerabilities are weaknesses or flaws in software, hardware, or configurations that attackers can exploit to compromise security. These vulnerabilities can result from coding errors, design oversights, improper configurations, or outdated systems. Unpatched systems or older operating systems/software that no longer receive security updates from their vendor can be particularly vulnerable.
 
 ## Denial of service
 
@@ -47,5 +50,12 @@ A Denial of Service (DoS) attack is a cyberattack aimed at making a system, serv
 
 
 
+## Patching systems
 
-# Free tools
+
+
+## Firewalls
+
+
+
+# Other free tools
