@@ -18,39 +18,34 @@ There are many different kinds of cyber attack, which can target both human bein
 
 ## Phishing
 
-Phishing attacks trick individuals into revealing sensitive information (e.g., passwords, credit card details) by impersonating legitimate entities through emails, texts, or fake websites.
-
-**Target:** Human error and trust.
-
-## Malware
-
-Malware is malicious software, including viruses, worms, Trojans, ransomware, and spyware, designed to disrupt, damage, or gain unauthorized access to systems. Often disguised as a legitimate program, once executed malicious code can cause damage and spread to other systems on the network. Ransomware will lock users our of their system or files until a ransom has been paid (usually demanded by the attacker via a cryptocurrency for anonymity).
-
-**Target:** Computers, networks, or devices.
+Phishing attacks trick individuals into revealing sensitive information (e.g., passwords, credit card details) by impersonating legitimate entities through emails, texts, or fake websites. Spear phishing is a highly targeted phishing attack where attackers tailor their fraudulent messages to a specific individual, organization, or group. Unlike generic phishing, spear phishing emails or messages often appear more credible because they use personalised information, such as the target’s name, job role, or recent activities, to build trust and trick the recipient into taking harmful actions.
 
 ## Spoofing
 
 Spoofing is a type of cyberattack where an attacker impersonates a trusted entity to deceive a target, often to gain unauthorized access to systems, steal sensitive information, or carry out other malicious activities. The goal is to make the interaction appear legitimate so that the victim takes a desired action, such as clicking a link, sharing credentials, or executing unauthorized transactions. Spyware runs silently on the system to secretly monitor a users activities and key strokes, to collect data and passwords.
 
-## Ransomware
 
-A type of malware that locks users out of their systems or encrypts their files until a ransom is paid.
+## Malware
 
-Target: Critical data and operations.
-
+Malware is malicious software, including viruses, worms, Trojans, ransomware, and spyware, designed to disrupt, damage, or gain unauthorized access to systems. Often disguised as a legitimate program, once executed malicious code can cause damage and spread to other systems on the network. Ransomware will lock users our of their system or files until a ransom has been paid (usually demanded by the attacker via a cryptocurrency for anonymity).
 
 ## Credential Stuffing
 
-Using stolen credentials from one breach to access other accounts, leveraging users' habit of reusing passwords.
-
-Target: User accounts.
+Credential stuffing is a type of cyberattack where attackers use stolen username-password combinations, often obtained from data breaches, to attempt unauthorized access to multiple accounts. The attack exploits the common practice of password reuse across different platforms. If a platform that you've previously used suffered a data breach (in which usernames and passwords were stolen) then your credentials may have been exposed, and an attacker can attempt to use it to access other systems where you may have used the same password.
 
 ## Denial of service
 
-Overloading a system, server, or network with traffic, making it unavailable to legitimate users.
+A Denial of Service (DoS) attack is a cyberattack aimed at making a system, server, or network unavailable to legitimate users by overwhelming it with excessive traffic or resource demands. Attackers may have access to a large number of bots, potentially running on other breached systems without those users knowledge. They can then use these bots to direct legitimate seeming traffic to a one particular website or endpoint, blocking legitimate connections from being able to connect.
 
-Target: Online services or networks.
+# Methods of defence
 
-# Educating staff
+## Educating staff
+
+
+
+## Antimalware tools
+
+
+
 
 # Free tools
