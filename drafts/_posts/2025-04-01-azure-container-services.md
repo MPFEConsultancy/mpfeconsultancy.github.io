@@ -3,7 +3,7 @@ layout: post
 title: Azure Container Services
 image: /assets/img/azure-container-services.png
 description: >
-  One of the key advantages of Cloud Computing is that it is very easy to start deploying and using resources. However without careful management costs can quickly escalate. This article explores some of the ways in which Azure empowers you to monitor and control costs.
+  Azure features a number of services for working with Containers. These can be leveraged to improve the deployment speed and security of containerized software, while extrapolating away the complexity of hosting and running containers.
 hide_last_modified: true
 author: mark
 ---
