@@ -10,7 +10,7 @@ author: mark
 
 Microsoft Azure features a number of services for working with the virtualization concept known as "containerization". In this blog article we will explore those services and how they can be leveraged to improve the speed and security of software development.
 
-> ## What is a container?
+> **What is a container?**
 >
 > In computing, a container is a lightweight, portable, and self-contained package that bundles an application's code, runtime, libraries, and dependencies, allowing it to run consistently across different environments.
 > The history of containers can be traced back to the 1970s, where it was first implemented on Unix systems as a way to better isolate application code.
