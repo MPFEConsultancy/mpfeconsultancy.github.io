@@ -43,13 +43,17 @@ While Red Hat Enterprise Linux CoreOS is used to run the "control plane" compone
 
 > Build and deploy modern apps and microservices using serverless containers
 
-Azure Container Apps (ACA) is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft. Scaling is event-driven, or automatic, where as with AKS you have the option to scale manually. One of the benefits of ACA is that for HTTP traffic, it automatically scales to zero which avoids usage charges when there's no traffic. You can do this with AKS, but it requires configuring Kubernetes-based Event Driven Autoscaling (KEDA). ACA is a good choice for less complex deployments where you don't need or want full control of the underlying Kubernetes cluster.
+[Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) (ACA) is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft. Scaling is event-driven, or automatic, where as with AKS you have the option to scale manually. One of the benefits of ACA is that for HTTP traffic, it automatically scales to zero which avoids usage charges when there's no traffic. You can do this with AKS, but it requires configuring Kubernetes-based Event Driven Autoscaling (KEDA). ACA is a good choice for less complex deployments where you don't need or want full control of the underlying Kubernetes cluster.
 
 ![Azure Container Apps example scenarios](/assets/img/azure-container-apps-example-scenarios.png)
 
 ### Azure Functions
 
 > Execute event-driven, serverless code with an end-to-end development experience
+
+[Azure Functions](https://azure.microsoft.com/en-us/products/functions) supports deploying your function apps as Linux containers, but the underlying host is essentially ACA. Azure Functions are best used for event-driven, serverless workloads, such as building lightweight APIs, processing messages from queues, or running scheduled tasks, where you want to focus on code execution without managing infrastructure. When you're developing an Azure Function you're typically focussed on the code itself and leaving it to Azure to determine how it is run.
+
+![Deploying a container to Azure Functions](/assets/img/auzre-functions.png)
 
 ### Web App for Containers
 
