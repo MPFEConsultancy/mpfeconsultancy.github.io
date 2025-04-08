@@ -19,6 +19,8 @@ Microsoft Azure features a number of services for working with the virtualizatio
 > Docker made containers approachable for developers with a clean CLI, sensible defaults and easy to write Dockerfiles.
 > Ultimately "It works on my machine" became "It works _everywhere_".
 
+Azure offers a range of containerization services. Which ones you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform. The current services are as follows:
+
 ### Azure Kubernetes Service (AKS)
 
 > Deploy and scale containers on managed Kubernetes
@@ -31,13 +33,17 @@ Kubernetes (often shortened as "K8s") is an open-source container orchestration 
 
 > Deploy and scale containers on managed Red Hat OpenShift
 
-OpenShift is a family of containerization products developed by Red Hat. OpenShift is built on top of Kubernetes, but adds additional features and tools to automate tasks such as building, deploying, scaling and managing applications. Azure Red Hat OpenShift is a PaaS (Platform as a Service) offering (much like AKS), which simplifies running Red Hat OpenShift by extrapolating away the complexity of building, maintaining and operating the cluster. Unlike AKIS, OpenShift includes an integrated container image registry, simplifying image management. It is also includes other software by default, such as application runtimes and observability packages.
+OpenShift is a family of containerization products developed by Red Hat. OpenShift is built on top of Kubernetes, but adds additional features and tools to automate tasks such as building, deploying, scaling and managing applications. [Azure Red Hat OpenShift](https://azure.microsoft.com/en-gb/products/openshift) is a Platform as a Service (PaaS) offering (much like AKS), which simplifies running Red Hat OpenShift by extrapolating away the complexity of building, maintaining and operating the cluster. Unlike AKS, OpenShift includes an integrated container image registry, simplifying image management. It is also includes other software by default, such as application runtimes and observability packages.
 
 ![Red Hat OpenShift components](/assets/img/redhat-open-shift-components.jpg)
+
+While Red Hat Enterprise Linux CoreOS is used to run the "control plane" components of OpenShift (so that it can support upgrades and patches of the control plane), the compute nodes (where your containers / applications run) can be running Red Hat CoreOS, RHEL or Windows.
 
 ### Azure Container Apps
 
 > Build and deploy modern apps and microservices using serverless containers
+
+Azure Container Apps is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft.
 
 ### Azure Functions
 
