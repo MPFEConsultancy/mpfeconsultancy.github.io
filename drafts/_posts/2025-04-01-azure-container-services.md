@@ -19,34 +19,48 @@ Microsoft Azure features a number of services for working with the virtualizatio
 > Docker made containers approachable for developers with a clean CLI, sensible defaults and easy to write Dockerfiles.
 > Ultimately "It works on my machine" became "It works _everywhere_".
 
+### Azure Kubernetes Service (AKS)
 
+> Deploy and scale containers on managed Kubernetes
 
+Kubernetes (often shortened as "K8s") is an open-source container orchestration platform. It automates the deployment, scaling and management of containerized applications. You can build and run your open Kubernetes cluster, but this can involve a lot of complexity and the burden of ongoing maintenance. [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/products/kubernetes-service), simplifies this by offering Kubernetes as a managed service, meaning Microsoft are responsible for the underlying infrastructure, maintenance and patching.
 
+![AKS control plane and nodes](/assets/img/aks-control-plane-and-nodes.png)
 
+### Azure Red Hat OpenShift
 
+> Deploy and scale containers on managed Red Hat OpenShift
 
+OpenShift is a family of containerization products developed by Red Hat. OpenShift is built on top of Kubernetes, but adds additional features and tools to automate tasks such as building, deploying, scaling and managing applications. Azure Red Hat OpenShift is a PaaS (Platform as a Service) offering (much like AKS), which simplifies running Red Hat OpenShift by extrapolating away the complexity of building, maintaining and operating the cluster. Unlike AKIS, OpenShift includes an integrated container image registry, simplifying image management. It is also includes other software by default, such as application runtimes and observability packages.
 
+![Red Hat OpenShift components](/assets/img/redhat-open-shift-components.jpg)
 
+### Azure Container Apps
 
+> Build and deploy modern apps and microservices using serverless containers
 
-Microsoft Azure has two container services:
+### Azure Functions
 
-- [Azure Container Service](https://azure.microsoft.com/en-gb/overview/containers/) (generally available [since April 2016](https://azure.microsoft.com/en-us/blog/azure-container-service-is-now-generally-available/)  – you can also use Kubernetes as an orchestrator)
-- [Azure Container Service - AKS](https://azure.microsoft.com/en-gb/services/container-service/) (preview) - also known as container services (managed) is a dedicated managed Kubernetes service, in preview since Oct 2017
-There are also the following services:
+> Execute event-driven, serverless code with an end-to-end development experience
 
-- [Container Groups](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-container-groups) (preview) - a top level resource for Azure Container instances. A container group is a collection of containers that get scheduled on the same host machine. They share a lifecycle, local network and storage volumes.
-- [Container Registries](https://azure.microsoft.com/en-gb/services/container-registry/) - a private docker registry to store and manage container images.
-- [Container Instances](https://azure.microsoft.com/en-gb/services/container-instances/) (preview) - a service for easily running containers without needing to worry about orchestration. I think this service is aimed at testing/development.
+### Web App for Containers
 
-# Azure Container Service
+> Run containerized web apps on Windows and Linux
 
-- Available in all regions
-- The master Kubernetes machines are exposed to you in the Azure portal and are yours to manage (and pay for).
+### Azure Container Instances
 
-# Azure Container Service (AKS)
-- Kubernetes as a service. Currently in preview
-- Only available in the East US and Central US regions
-- The master Kubernetes machines are a managed service grouped and referred to as the "Hosted Control Plane". You still control if/when Kubernetes version is upgraded (which can be done without downtime) but you aren't having to otherwise pay for or manage the management machines.
-- Only pay for the virtual machines instances, storage and networking resources consumed by your Kubernetes cluster.
-- Azure Container Service is a free service, therefore it does not have a financially backed SLA. However, for the availability of underlying virtual machines, the Virtual Machine SLA applies.
+> Launch containers with hypervisor isolation
+
+[Container Instances](https://azure.microsoft.com/en-gb/services/container-instances/) (preview) - a service for easily running containers without needing to worry about orchestration. I think this service is aimed at testing/development.
+
+[Container Groups](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-container-groups) (preview) - a top level resource for Azure Container instances. A container group is a collection of containers that get scheduled on the same host machine. They share a lifecycle, local network and storage volumes.
+
+### Azure Service Fabric
+
+Deploy and operate always-on, scalable, distributed apps
+
+### Azure Container Registry
+
+Build, store, secure, and replicate container images and artifacts
+
+[Container Registries](https://azure.microsoft.com/en-gb/services/container-registry/) - a private docker registry to store and manage container images.
