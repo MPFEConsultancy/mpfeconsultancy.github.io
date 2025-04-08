@@ -17,7 +17,7 @@ Microsoft Azure features a number of services for working with the virtualizatio
 > However the popularity of containers really exploded with the release of Docker in 2013.
 > This led to a de facto standard format for container images (OCI) which the industry rallied around.
 > Docker made containers approachable for developers with a clean CLI, sensible defaults and easy to write Dockerfiles.
-> Ultimately "It works on my machine" became "It works _everywhere_".
+> Ultimately "It works on my machine" became "It works everywhere".
 
 Azure offers a range of containerization services. Which ones you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform. The current services are as follows:
 
@@ -43,7 +43,9 @@ While Red Hat Enterprise Linux CoreOS is used to run the "control plane" compone
 
 > Build and deploy modern apps and microservices using serverless containers
 
-Azure Container Apps is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft.
+Azure Container Apps (ACA) is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft. Scaling is event-driven, or automatic, where as with AKS you have the option to scale manually. One of the benefits of ACA is that for HTTP traffic, it automatically scales to zero which avoids usage charges when there's no traffic. You can do this with AKS, but it requires configuring Kubernetes-based Event Driven Autoscaling (KEDA). ACA is a good choice for less complex deployments where you don't need or want full control of the underlying Kubernetes cluster.
+
+![Azure Container Apps example scenarios](/assets/img/azure-container-apps-example-scenarios.png)
 
 ### Azure Functions
 
