@@ -19,7 +19,7 @@ In modern software development, containers have become a popular way to package 
 > Docker made containers approachable for developers with a clean CLI, sensible defaults and easy to write Dockerfiles.
 > Ultimately "It works on my machine" became "It works everywhere".
 
-Azure offers a range of containerization services. Which ones you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform.
+Azure offers a range of containerization services. Which one/s you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform.
 
 ![Azure compute services](/assets/img/azure-compute-services.png)
 
