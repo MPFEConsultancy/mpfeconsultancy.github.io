@@ -3,7 +3,7 @@ layout: post
 title: Azure Container Services
 image: /assets/img/azure-container-services.png
 description: >
-  Azure features a number of services for working with Containers. These can be leveraged to improve the deployment speed and security of containerized software, while extrapolating away the complexity of hosting and running containers.
+  Azure features a number of services for working with Containers. These can be leveraged to improve the deployment speed and security of containerized software, while eliminating the complexity of hosting and running a container platform.
 hide_last_modified: true
 author: mark
 ---
