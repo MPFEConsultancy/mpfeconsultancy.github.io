@@ -208,5 +208,5 @@ download:
   icon: icon-box-add
 bluesky:
   name: Bluesky
-  icon: icon-twitter
+  icon: icon-rss2
   prepend: 'https://bsky.app/profile/'
