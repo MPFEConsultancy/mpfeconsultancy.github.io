@@ -86,3 +86,7 @@ Within ACI you define [Container Groups](https://docs.microsoft.com/en-us/azure/
 [Azure Container Registry](https://azure.microsoft.com/en-us/products/container-registry) (ACR) is not a compute platform (like the other offerings above), but a resource that can be used as a private repository for your container images. It also can be used to store other related artifacts such as Helm charts. ACR is geo-replicated and secured via Entra ID much like Azure Storage. It also has automatic vulnerability scanning built in.
 
 ![Azure Container Instances](/assets/img/azure-container-instances.png)
+
+## Summary
+
+Using containers can be a useful way to ensure software can be deployed consistently and successfully across different platforms and environments. Selecting the right containerization service in Azure requires you to consider the needs and complexity of the application you want to run. For example if you're lifting and shifting an existing Kubernetes cluster to the cloud, Azure Kubernetes Service could be a good option to ensure you can continue to configure the cluster to the specific needs of your application while removing the management and maintenance overhead. If you're deploying containers to the cloud for the first time Azure Container Instances or Azure Container Apps could be a good choice, simplifying the configuration required of the platform. Ultimately Azure makes it easy to experiment with these technologies and many have free tiers to help you get started.
