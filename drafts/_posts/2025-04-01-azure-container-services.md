@@ -23,7 +23,15 @@ Azure offers a range of containerization services. Which ones you should choose 
 
 ![Azure compute services](/assets/img/azure-compute-services.png)
 
-The current services are as follows:
+Compute services are often grouped under the following terms, that describe the type and complexity of the service being offered to the end consumer:
+
+- **IaaS — Infrastructure as a Service**, a cloud computing model that provides on-demand access to virtualized computing resources like servers, storage, and networking, allowing businesses to rent these resources instead of managing their own physical hardware.
+- **CPaaS — Container Platform as a Service**, is a cloud-based service that allows developers to manage and deploy applications using containers, providing a managed environment for container orchestration, scaling, and deployment, without the need to manage the underlying infrastructure.
+- **CaaS — Container as a Service**, is a cloud-based service that allows developers and IT departments to manage and deploy containerized applications, enabling rapid deployment and scaling without managing underlying infrastructure.
+- **PaaS — Platform as a Service**, is a cloud computing model where a third-party provider delivers hardware and software tools, including infrastructure, over the internet, enabling users to develop, run, and manage applications without managing the underlying infrastructure.
+- **FaaS — Function as a Service**, a cloud computing model where developers can deploy individual functions to the cloud without managing the underlying infrastructure, allowing them to focus on code execution and event-driven applications.
+
+As of April 2025, the Azure containerization services are as follows:
 
 ### Azure Kubernetes Service (AKS)
 
