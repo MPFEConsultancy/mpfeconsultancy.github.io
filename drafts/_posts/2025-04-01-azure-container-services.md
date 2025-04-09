@@ -8,7 +8,7 @@ hide_last_modified: true
 author: mark
 ---
 
-Microsoft Azure features a number of services for working with the virtualization concept known as "containerization". In this blog article we will explore those services and how they can be leveraged to improve the speed and security of software development.
+In modern software development, containers have become a popular way to package and deploy code. Microsoft Azure features a number of containerization services. In this blog article we will explore those services and how they can be leveraged to improve the speed and security of deploying software code in a way that is both cost efficient and scales to meet demand.
 
 > **What is a container?**
 >
@@ -19,7 +19,11 @@ Microsoft Azure features a number of services for working with the virtualizatio
 > Docker made containers approachable for developers with a clean CLI, sensible defaults and easy to write Dockerfiles.
 > Ultimately "It works on my machine" became "It works everywhere".
 
-Azure offers a range of containerization services. Which ones you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform. The current services are as follows:
+Azure offers a range of containerization services. Which ones you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform.
+
+![Azure compute services](/assets/img/azure-compute-services.png)
+
+The current services are as follows:
 
 ### Azure Kubernetes Service (AKS)
 
@@ -53,26 +57,24 @@ While Red Hat Enterprise Linux CoreOS is used to run the "control plane" compone
 
 [Azure Functions](https://azure.microsoft.com/en-us/products/functions) supports deploying your function apps as Linux containers, but the underlying host is essentially ACA. Azure Functions are best used for event-driven, serverless workloads, such as building lightweight APIs, processing messages from queues, or running scheduled tasks, where you want to focus on code execution without managing infrastructure. When you're developing an Azure Function you're typically focussed on the code itself and leaving it to Azure to determine how it is run.
 
-![Deploying a container to Azure Functions](/assets/img/auzre-functions.png)
-
 ### Web App for Containers
 
 > Run containerized web apps on Windows and Linux
+
+Azure App Service can be used to run containers via the [Web App for Containers](https://azure.microsoft.com/en-gb/products/app-service/containers) resource. Azure App Service is a fully managed platform, optimised for hosting web applications such as websites and web APIs. This can be another good choice if you want to focus on developing your application and don't need or want any specific control of the underlying infrastructure on which it's run. By using Web App for Containers you can develop, test and deploy your web app as a container.
 
 ### Azure Container Instances
 
 > Launch containers with hypervisor isolation
 
-[Container Instances](https://azure.microsoft.com/en-gb/services/container-instances/) (preview) - a service for easily running containers without needing to worry about orchestration. I think this service is aimed at testing/development.
+[Azure Container Instances](https://azure.microsoft.com/en-gb/products/container-instances/) (ACI) is another serverless option for running containers in Azure. The containers are able to be spun up very quickly (in seconds), so can be beneficial for scaling vs other VM based platforms. In fact Azure Container Instances can be used to supplement your AKS compute, by utilizing [Virtual nodes on Azure Container instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-virtual-nodes) you can add a pod to your existing AKS cluster that run as container groups in ACI. The underlying platform is fully managed by Microsoft. Despite being a multitenant platform, the containers are isolated by Hypervisor, so are as isolated as they would be on a VM.
 
-[Container Groups](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-container-groups) (preview) - a top level resource for Azure Container instances. A container group is a collection of containers that get scheduled on the same host machine. They share a lifecycle, local network and storage volumes.
-
-### Azure Service Fabric
-
-Deploy and operate always-on, scalable, distributed apps
+Within ACI you define [Container Groups](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-container-groups) a top level resource for Azure Container instances. A container group is a collection of containers that get scheduled on the same host machine. They share a lifecycle, local network and storage volumes, which is conceptually similar to a pod in Kubernetes.
 
 ### Azure Container Registry
 
-Build, store, secure, and replicate container images and artifacts
+> Build, store, secure, and replicate container images and artifacts
 
-[Container Registries](https://azure.microsoft.com/en-gb/services/container-registry/) - a private docker registry to store and manage container images.
+[Azure Container Registry](https://azure.microsoft.com/en-us/products/container-registry) (ACR) is not a compute platform (like the other offerings above), but a resource that can be used as a private repository for your container images. It also can be used to store other related artifacts such as Helm charts. ACR is geo-replicated and secured via Entra ID much like Azure Storage. It also has automatic vulnerability scanning built in.
+
+![Azure Container Instances](/assets/img/azure-container-instances.png)
