@@ -19,7 +19,7 @@ In modern software development, containers have become a popular way to package 
 > Docker made containers approachable for developers with a clean CLI, sensible defaults and easy to write Dockerfiles.
 > Ultimately "It works on my machine" became "It works everywhere".
 
-Azure offers a range of containerization services. Which one/s you should choose will depend on your specific needs, the complexity of your application/s and how much control you want of the underlying platform.
+Azure offers a range of containerization services. The service(s) you should choose will depend on your specific needs, the complexity of your application(s) and how much control you want of the underlying platform.
 
 ![Azure compute services](/assets/img/azure-compute-services.png)
 
@@ -45,7 +45,7 @@ Kubernetes (often shortened as "K8s") is an open-source container orchestration 
 
 > Deploy and scale containers on managed Red Hat OpenShift
 
-OpenShift is a family of containerization products developed by Red Hat. OpenShift is built on top of Kubernetes, but adds additional features and tools to automate tasks such as building, deploying, scaling and managing applications. [Azure Red Hat OpenShift](https://azure.microsoft.com/en-gb/products/openshift) is a Platform as a Service (PaaS) offering (much like AKS), which simplifies running Red Hat OpenShift by extrapolating away the complexity of building, maintaining and operating the cluster. Unlike AKS, OpenShift includes an integrated container image registry, simplifying image management. It is also includes other software by default, such as application runtimes and observability packages.
+OpenShift is a family of containerization products developed by Red Hat. OpenShift is built on top of Kubernetes, but adds additional features and tools to automate tasks such as building, deploying, scaling and managing applications. [Azure Red Hat OpenShift](https://azure.microsoft.com/en-gb/products/openshift) is a Platform as a Service (PaaS) offering (much like AKS), which simplifies running Red Hat OpenShift by extrapolating away the complexity of building, maintaining and operating the cluster. Unlike AKS, OpenShift includes an integrated container image registry, simplifying image management. It also includes other software by default, such as application runtimes and observability packages.
 
 ![Red Hat OpenShift components](/assets/img/redhat-open-shift-components.jpg)
 
@@ -55,7 +55,7 @@ While Red Hat Enterprise Linux CoreOS is used to run the "control plane" compone
 
 > Build and deploy modern apps and microservices using serverless containers
 
-[Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) (ACA) is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft. Scaling is event-driven, or automatic, where as with AKS you have the option to scale manually. One of the benefits of ACA is that for HTTP traffic, it automatically scales to zero which avoids usage charges when there's no traffic. You can do this with AKS, but it requires configuring Kubernetes-based Event Driven Autoscaling (KEDA). ACA is a good choice for less complex deployments where you don't need or want full control of the underlying Kubernetes cluster.
+[Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) (ACA) is a more app-centric, simpler and serverless PaaS offering for running containers. While the underlying technology is still Kubernetes, the Kubernetes API is not exposed and the cluster is fully managed by Microsoft. Scaling is event-driven, or automatic, whereas with AKS you have the option to scale manually. One of the benefits of ACA is that, for HTTP traffic, it automatically scales to zero, which avoids usage charges when there's no traffic. You can do this with AKS, but it requires configuring Kubernetes-based Event Driven Autoscaling (KEDA). ACA is a good choice for less complex deployments where you don't need or want full control of the underlying Kubernetes cluster.
 
 ![Azure Container Apps example scenarios](/assets/img/azure-container-apps-example-scenarios.png)
 
