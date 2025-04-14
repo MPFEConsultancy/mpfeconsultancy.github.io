@@ -37,7 +37,7 @@ As of April 2025, the Azure containerization services are as follows:
 
 > Deploy and scale containers on managed Kubernetes
 
-Kubernetes (often shortened as "K8s") is an open-source container orchestration platform. It automates the deployment, scaling and management of containerized applications. You can build and run your open Kubernetes cluster, but this can involve a lot of complexity and the burden of ongoing maintenance. [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/products/kubernetes-service), simplifies this by offering Kubernetes as a managed service, meaning Microsoft are responsible for the underlying infrastructure, maintenance and patching.
+Kubernetes (often shortened as "K8s") is an open-source container orchestration platform. It automates the deployment, scaling and management of containerized applications. You can build and run your own Kubernetes cluster, but this can involve a lot of complexity and the burden of ongoing maintenance. [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/products/kubernetes-service), simplifies this by offering Kubernetes as a managed service, meaning Microsoft are responsible for the underlying infrastructure, maintenance and patching.
 
 ![AKS control plane and nodes](/assets/img/aks-control-plane-and-nodes.png)
 
