@@ -17,6 +17,8 @@ First published in 2012, Amazon Web Services (AWS) the Well-Architected Framewor
 - Cost Optimization
 - Sustainability
 
+![AWS Well-Architected Pillars](/assets/img/aws-well-architected-pillars.png)
+
 Other cloud providers have similar frameworks, and we've blogged about the [Azure Well-Architected Framework](https://mpfe.uk/blog/2021-04-01-azure-well-architected-framework/) previously.
 
 > The AWS Well-Architected Framework helps you understand trade-offs for decisions you make while building workloads on AWS.
