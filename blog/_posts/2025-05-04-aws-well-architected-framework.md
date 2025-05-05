@@ -79,5 +79,8 @@ AWS have further extended the well-architected framework through lenses, which e
 - **SAP** — Best practices for deploying and managing SAP workloads on AWS infrastructure.
 - **Serverless Applications** — Design principles for serverless workloads using services like AWS Lambda, DynamoDB, and API Gateway.
 
-Customers can also create [custom lenses](https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-custom.html), featuring your own pillars, questions, best practices and improvement plans.
+Customers can also create [custom lenses](https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-custom.html), featuring their own pillars, questions, best practices and improvement plans.
 
+## Summary
+
+We hope the above has been a useful summary of the AWS Well-Architected Tool. If you're ready to get started validating your workloads, there is a [getting started guide here](https://docs.aws.amazon.com/wellarchitected/latest/userguide/getting-started.html).
