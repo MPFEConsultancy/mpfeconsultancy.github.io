@@ -13,3 +13,4 @@ Wiz is a Cloud Security Software platform, designed to help organisations unders
 1. It builds a graph database of your resources, vulnerabilities, security principals and the relationships between them. This database can be quickly and easily queried to answer many complex questions about your infrastructure, applications and their security posture.
 2. It uses this graph database to identify "toxic combinations", of vulnerabilities, cloud misconfigurations and exposed secrets to identify and prioritise the most critical risks.
 
+![Wiz Risk-based approach to vulnerability management in the cloud](/assets/img/wiz-risk-approach.webp)
